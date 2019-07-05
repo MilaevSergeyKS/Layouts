@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Template layout</title>
+</head>
+<body>
+
+<h1>New Layout</h1>
+
+<!--<form action="#" id="form-calendar">-->
+<!--    <input id="input-date" type="date">-->
+<!--    <button type="submit">Send Date</button>-->
+<!--</form>-->
+
+<!--<div id="calendar"></div>-->
+
+<div class="form">
+    <div class="form__field calendar">
+<!--        <label class="form__field-label calendar__label">-->
+<!--            <input class="form__field-input calendar-input" id="input-date" type="date">-->
+<!--        </label>-->
+
+        <div class="form__dropdown calendar__dropdown">
+            <div class="calendar__dropdown-block">
+                <div class="calendar__selected-date">
+                    <div class="calendar__selected-date-field js-calendar-date-start">04.02.2019</div>
+
+                    <div class="calendar__selected-date-separator">-</div>
+
+                    <div class="calendar__selected-date-field js-calendar-date-end">08.02.2019</div>
+                </div>
+
+                <div class="calendar__month">
+                    <svg class="calendar__month-arrow calendar__month-arrow--left icon-arrow js-calendar-month-arrow" data-arrow-direction="left">
+                        <use xlink:href="./images/icons-sprite.svg#arrow"></use>
+                    </svg>
+
+                    <div class="calendar__month-name js-calendar-month">Февраль 2019</div>
+
+                    <svg class="calendar__month-arrow calendar__month-arrow--right icon-arrow js-calendar-month-arrow" data-arrow-direction="right">
+                        <use xlink:href="./images/icons-sprite.svg#arrow"></use>
+                    </svg>
+                </div>
+
+                <ul class="calendar__week">
+                    <li class="calendar__week-item">Пн</li>
+                    <li class="calendar__week-item">Вт</li>
+                    <li class="calendar__week-item">Ср</li>
+                    <li class="calendar__week-item">Чт</li>
+                    <li class="calendar__week-item">Пт</li>
+                    <li class="calendar__week-item">Сб</li>
+                    <li class="calendar__week-item">Вс</li>
+                </ul>
+
+                <div class="calendar__days js-calendar-days" id="calendar">
+<!--                    <div class="calendar__days-item">01</div>-->
+<!--                    <div class="calendar__days-item">02</div>-->
+<!--                    <div class="calendar__days-item calendar__days-item-start">03</div>-->
+<!--                    <div class="calendar__days-item calendar__days-item-range">04</div>-->
+<!--                    <div class="calendar__days-item calendar__days-item-range">05</div>-->
+<!--                    <div class="calendar__days-item calendar__days-item-end">06</div>-->
+<!--                    <div class="calendar__days-item">07</div>-->
+<!--                    <div class="calendar__days-item">08</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--<svg class="nav-bar__account-btn-icon icon-arrow">-->
+<!--    <use xlink:href="./images/icons-sprite.svg#arrow"></use>-->
+<!--</svg>-->
+
+</body>
+</html>
+
