@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
+.intermediate-page {
+  height: 100vh;
+  padding: 10px;
+  overflow: hidden;
+  background: #EEF0F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50%);
+  }
+  &__img {
+    height: auto;
+    width: 80px;
+    margin-bottom: 28px;
+    &--spin {
+      animation: spin 2s linear infinite;
+    }
+  }
+  &__title {
+    font: 700 20px / 24px 'Roboto';
+    margin-bottom: 8px;
+    color: #403646;
+    text-align: center;
+  }
+  &__description {
+    max-width: 288px;
+    text-align: center;
+    font: 400 12px / 14px 'Roboto';
+    color: #403646;
+    margin-bottom: 32px;
+  }
+  &__btn {
+    font: 700 14px / 16px 'Roboto';
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 88px;
+    background: #4AA8E7;
+    box-shadow: 0 2px 4px rgba(74, 168, 231, 0.25);
+    border-radius: 2px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .intermediate-page {
+    &__wrapper {
+      transform: translateY(-20%);
+    }
+    &__btn {
+      padding: 14px;
+      width: 100%;
+    }
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
