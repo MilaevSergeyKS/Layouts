@@ -3,12 +3,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Piastrix Email Layout</title>
+    <title>Piastrix Email Layout2</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
     <style>
         table {
             margin: 0;
-            padding: 0
+            padding: 0;
+            border-collapse: collapse;
         }
 
 
@@ -28,147 +29,153 @@
             background-color: #E1E1E1; /* Цвет линии для браузера Firefox и Opera */
             height: 1px;
         }
+        .padding-wrapper {
+            padding: 0 24px;
+        }
+        .padding-wrapper--top {
+            padding-top: 24px;
+        }
+        .padding-wrapper--bottom {
+            padding-bottom: 24px;
+        }
 
         .email-title {
             font-family: 'Roboto', 'Arial', sans-serif;
-            font-weight: 500;
             color: #000000;
-            line-height: 21px;
-            font-size: 28px;
-            margin-bottom: 12px;
+            margin-bottom: 17px;
             text-align: left;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
         }
-
-        .email-text {
-            font-family: 'Roboto', 'Arial', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 24px;
-            color: #000000;
-        }
-
-        .email-list {
-            padding-left: 0;
-        }
-
-        .email-list > li {
-            list-style-type: none;
-            position: relative;
-            padding-left: 17px;
-        }
-
-        .email-list > li > span {
-            height: 7px;
-            width: 7px;
-            background: #2196F3;
-            border-radius: 100%;
-        }
-
-        .email-list__dots {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
         .email-link {
             color: #2196F3 !important;
             -webkit-text-size-adjust: none;
         }
 
-        .email-btn {
+        .email-text {
             font-family: 'Roboto', 'Arial', sans-serif;
-            padding-top: 16px;
-            padding-bottom: 16px;
-            padding-right: 37px;
-            padding-left: 37px;
+            font-weight: 400;
+            color: #000000;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 24px;
+            -webkit-text-size-adjust: none;
+        }
+
+        .email-text--grey {
+            font-family: 'Roboto', 'Arial', sans-serif;
+            font-weight: 400;
+            color: #6C727C;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 24px;
+            -webkit-text-size-adjust: none;
+        }
+
+        .email-btn {
+            display: inline-block;
+            font-family: 'Roboto', 'Arial', sans-serif;
+            padding: 0 40px;
             border-radius: 99px;
+            line-height: 40px;
             color: #ffffff;
             text-transform: uppercase;
             text-decoration: none;
-            background: #2196F3;
+            background-color: #2196F3;
+            text-align: center;
+            font-weight: 500;
+            font-size: 12px;
         }
+
 
     </style>
 </head>
 <body>
-<table class="email" border="0" cellpadding="0" cellspacing="0"
-       style="width: 100%; max-width: 600px;  background: #F5F7FA; padding-bottom: 40px">
+<table border="0" cellpadding="0" cellspacing="0"
+       style="width: 100%; padding-bottom: 40px;">
     <tbody>
     <tr>
-        <td>
-            <table border="0" cellpadding="0" cellspacing="0" style="background: #ffffff; width: 100%">
-                <tr>
-                    <td style="height: 80px; padding-left: 32px; width: 100%">
-                        <img src="./Logo_Piastrixpng.png" width="129px" height="50px" alt="logo">
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <tr>
-        <td style="padding-top: 39px; padding-left: 24px;padding-bottom: 10px; padding-right: 24px">
-            <h3 class="email-title">Уважаемые партнеры!</h3>
-            <p class="email-text">Рады представить Вам новую версию бизнес части «Piastrix</p>
-            <ul class="email-list">
-                <li class="email-text"><span class="email-list__dots"></span>Мы полностью переработали дизайн и ядро
-                    системы;
-                </li>
-                <li class="email-text"><span class="email-list__dots"></span>Улучшили удобство использования основного
-                    функционала;
-                </li>
-                <li class="email-text"><span class="email-list__dots"></span>Значительно увеличили скорость работы с
-                    отчетами истории;
-                </li>
-                <li class="email-text"><span class="email-list__dots"></span>Добавили новый раздел с аналитикой по
-                    платежам;
-                </li>
-                <li class="email-text"><span class="email-list__dots"></span>Добавили новые возможности к управлению
-                    магазинами.
-                </li>
-            </ul>
-            <span class="email-text">Для входа в новую версию перейдите пожалуйста, по ссылке «Новый дизайн API» в разделе «API» или по прямой ссылке </span>
-            <a href="https://new-wallet.piastrix.com" target="_blank" class="email-text email-link">https://new-wallet.piastrix.com</a>.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="Shop_Active%202.png" width="100%" alt="shop-active">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="1screen.png" width="100%" alt="analytics">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="2screen.png" width="100%" alt="analytics">
-        </td>
-    </tr>
-    <tr>
-        <td style=" padding-left: 24px;padding-bottom: 10px; padding-right: 24px">
-            <span class="email-text">
-                Обращаем ваше внимание, что мобильная версия сервиса будет доступна в ближайшее время. Предложения и отзывы по новой версии вы можете отправлять через форму «Обратной связи» или на email
-                <a href="mailto:support@piastrix.com" target="_blank" class="email-link">support@piastrix.com</a>.
+        <td align="center">
+            <div style="padding: 10px; background-color: #ffffff; margin: 0 auto">
+                <!--///////////-->
+                <table class="email" border="0" cellpadding="0" cellspacing="0" align="center"
+                       style="max-width: 600px;  width: 100%;  background: #F5F7FA;  border: 2px solid #F5F7FA;">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <!--///////////-->
+                            <table border="0" cellpadding="0" cellspacing="0" style="background: #ffffff; width: 100%">
+                                <tr>
+                                    <td style="height: 80px; padding-left: 32px; padding-right: 32px; width: 100%">
+                                        <img src="./Logo_Piastrixpng.png" width="129px" height="50px" alt="logo">
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--///////////-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="padding-wrapper padding-wrapper--bottom" style="padding-top: 34px">
+                            <h3 class="email-title">Восстановление пароля</h3>
+
+                            <span class="email-text">
+                                Вы отправили запрос на восстановление пароля для сервиса Piastrix. Чтобы подтвердить восстановление, пройдите по этой
+                                <a href="#" target="_blank" class="email-text email-link">ссылке</a>
+                                Если Вы не делали запрос на регистрацию, проигнорируйте это письмо.
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="padding-wrapper" style="padding-bottom: 32px;">
+                            <div>
+                                <a class="email-btn" href="#" target="_blank"
+                                   style="text-decoration: none; cursor: pointer">
+                                    ВОССТАНОВИТЬ ПАРОЛЬ
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="padding-wrapper padding-wrapper--bottom">
+                            <span class="email-text--grey">С уважением, команда Piastrix</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
                             <hr>
-            </span>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <br>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <center style="max-width: 600px; width: 100%;">
-                <a href="https://new-wallet.piastrix.com" target="_blank"
-                   style="text-decoration: none; cursor: pointer">
-                <span class="email-btn">
-                        СМОТРЕТЬ НОВЫЙ ДИЗАЙН
-                </span></a>
-            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="padding-wrapper padding-wrapper--bottom padding-wrapper--top">
+                            <!--///////////-->
+                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tbody>
+                                <tr>
+                                    <td style="width: 70%">
+                                        <span class="email-text--grey">Поддержка: support@piastrix.com</span>
+                                    </td>
+
+                                    <td align="right" style="width: 30%">
+                                        <a href="#" target="_blank" class="email-text--grey">Контакты</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <!--///////////-->
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--///////////-->
+            </div>
         </td>
     </tr>
     </tbody>
