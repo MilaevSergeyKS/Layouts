@@ -1,150 +1,160 @@
 <!--Block Give Card Start-->
-<div class="page__content-block page__content-block--half">
-    <div class="page__content-title">Отдаю</div>
+<div class="page__content-wrapper">
+    <div class="page__content-block page__content-block--half">
+        <div class="page__content-title">Отдаю</div>
 
-    <div class="page__content-card card give-card">
-        <!--        <div class="card__select is-active">-->
-        <div class="card__select">
-            <div class="card__select-btn">
-                <img class="card__select-img" src="../img/webmoney.png" alt="icon-currency">
+        <svg class="page__icon-svg card__cross-arrows">
+            <use xlink:href="./images/icons-sprite.svg#icon-cross-arrows"></use>
+        </svg>
 
-                <span>WebMoney WMR</span>
-
-                <svg class="page__icon-svg card__select-arrow">
-                    <use xlink:href="./images/icons-sprite.svg#icon-down-arrow"></use>
-                </svg>
-            </div>
-
-            <div class="card__select-dropdown">
-                <div class="card__select-btn card__select-option">
+        <div class="page__content-card card give-card">
+            <!--        <div class="card__select is-active">-->
+            <div class="card__select">
+                <div class="card__select-btn">
                     <img class="card__select-img" src="../img/webmoney.png" alt="icon-currency">
 
                     <span>WebMoney WMR</span>
+
+                    <svg class="page__icon-svg card__select-arrow">
+                        <use xlink:href="./images/icons-sprite.svg#icon-down-arrow"></use>
+                    </svg>
+                </div>
+
+                <div class="card__select-dropdown">
+                    <div class="card__select-btn card__select-option">
+                        <img class="card__select-img" src="../img/webmoney.png" alt="icon-currency">
+
+                        <span>WebMoney WMR</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <label class="card__label">
-            <input class="card__input" value="0" type="text">
+            <label class="card__label">
+                <input class="card__input" value="0" type="text">
 
-            <span class="card__label-text">WMR</span>
-        </label>
-
-        <div class="card__info">
-            <div class="card__info-description">
-                <p class="card__info-text">Min: 1000 Max:5000000</p>
-                <p class="card__info-text">С учётом комиссии: 2520 WMR</p>
-                <p class="card__info-text">1 WMR = 2.54 P24UAH</p>
-            </div>
-
-            <div class="card__info-promo promo is-active">
-                <label class="promo__label">
-                    <input class="promo__input" type="text">
-
-                    <span class="promo__input-placeholder">У Вас есть промо-код?</span>
-                </label>
-
-                <!--<div class="promo__btn-submit is-hide">Активировать</div>-->
-                <div class="promo__btn-submit">Активировать</div>
-            </div>
-        </div>
-
-        <div class="card__user-block user-block">
-            <label class="card__label user-block__label">
-                <input class="card__input user-block__input" type="text">
-
-                <span class="card__input-placeholder user-block__input-placeholder">Email</span>
+                <span class="card__label-text">WMR</span>
             </label>
 
-            <div class="user-block__wrapper">
-                <div class="user-block__container">
-                    <label class="card__label user-block__label">
-                        <input class="card__input user-block__input" type="text">
-
-                        <span class="card__input-placeholder user-block__input-placeholder is-active">Фамилия</span>
-                    </label>
-
-                    <label class="card__label user-block__label">
-                        <input class="card__input user-block__input" type="text">
-
-                        <span class="card__input-placeholder user-block__input-placeholder is-active">Отчество</span>
-                    </label>
+            <div class="card__info">
+                <div class="card__info-description">
+                    <p class="card__info-text">Min: 1000 Max:5000000</p>
+                    <p class="card__info-text">С учётом комиссии: 2520 WMR</p>
+                    <p class="card__info-text">1 WMR = 2.54 P24UAH</p>
                 </div>
 
-                <div class="user-block__container">
-                    <label class="card__label user-block__label">
-                        <input class="card__input user-block__input" type="text">
+                <div class="card__info-promo promo is-active">
+                    <label class="promo__label">
+                        <input class="promo__input" type="text">
 
-                        <span class="card__input-placeholder user-block__input-placeholder is-active">Фамилия</span>
+                        <span class="promo__input-placeholder">У Вас есть промо-код?</span>
                     </label>
 
-                    <label class="card__label user-block__label">
-                        <input class="card__input user-block__input" type="text">
+                    <!--<div class="promo__btn-submit is-hide">Активировать</div>-->
+                    <div class="promo__btn-submit">Активировать</div>
+                </div>
+            </div>
 
-                        <span class="card__input-placeholder user-block__input-placeholder is-active">Отчество</span>
-                    </label>
+            <div class="card__user-block user-block">
+                <label class="card__label user-block__label">
+                    <input class="card__input user-block__input" type="text">
+
+                    <span class="card__input-placeholder user-block__input-placeholder">Email</span>
+                </label>
+
+                <div class="user-block__wrapper">
+                    <div class="user-block__container">
+                        <label class="card__label user-block__label">
+                            <input class="card__input user-block__input" type="text">
+
+                            <span class="card__input-placeholder user-block__input-placeholder is-active">Фамилия</span>
+                        </label>
+
+                        <label class="card__label user-block__label">
+                            <input class="card__input user-block__input" type="text">
+
+                            <span class="card__input-placeholder user-block__input-placeholder is-active">Отчество</span>
+                        </label>
+                    </div>
+
+                    <div class="user-block__container">
+                        <label class="card__label user-block__label">
+                            <input class="card__input user-block__input" type="text">
+
+                            <span class="card__input-placeholder user-block__input-placeholder is-active">Фамилия</span>
+                        </label>
+
+                        <label class="card__label user-block__label">
+                            <input class="card__input user-block__input" type="text">
+
+                            <span class="card__input-placeholder user-block__input-placeholder is-active">Отчество</span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--Block Give Card End-->
-<!--Block Receive Card Start-->
-<div class="page__content-block page__content-block--half">
-    <div class="page__content-title">Получаю</div>
+    <!--Block Give Card End-->
+    <!--Block Receive Card Start-->
+    <div class="page__content-block page__content-block--half">
+        <div class="page__content-title">Получаю</div>
 
-    <div class="page__content-card card receive-card">
-        <div class="card__select">
-            <div class="card__select-btn">
-                <img class="card__select-img" src="../img/privat.png" alt="icon-currency">
-
-                <span>WebMoney WMR</span>
-
-                <svg class="page__icon-svg card__select-arrow">
-                    <use xlink:href="./images/icons-sprite.svg#icon-down-arrow"></use>
-                </svg>
-            </div>
-
-            <div class="card__select-dropdown">
-                <div class="card__select-btn card__select-option">
+        <div class="page__content-card card receive-card">
+            <div class="card__select">
+                <div class="card__select-btn">
                     <img class="card__select-img" src="../img/privat.png" alt="icon-currency">
 
                     <span>WebMoney WMR</span>
+
+                    <svg class="page__icon-svg card__select-arrow">
+                        <use xlink:href="./images/icons-sprite.svg#icon-down-arrow"></use>
+                    </svg>
+                </div>
+
+                <div class="card__select-dropdown">
+                    <div class="card__select-btn card__select-option">
+                        <img class="card__select-img" src="../img/privat.png" alt="icon-currency">
+
+                        <span>WebMoney WMR</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <label class="card__label">
-            <input class="card__input" value="0" type="text">
+            <label class="card__label">
+                <input class="card__input" value="0" type="text">
 
-            <span class="card__label-text">P24uah</span>
-        </label>
+                <span class="card__label-text">P24uah</span>
+            </label>
 
-        <div class="card__info">
-            <div class="card__info-description">
-                <p class="card__info-text">Min: 1</p>
-                <p class="card__info-text">Резерв: 113000 P24UAH</p>
-            </div>
-
-        </div>
-
-        <label class="card__label user-block__label">
-            <input class="card__input user-block__input" type="text">
-
-            <span class="card__input-placeholder user-block__input-placeholder is-active">Номер карты ПриватБанка</span>
-        </label>
-
-        <div class="card__checkbox">
-            <div class="card__checkbox-block">
+            <div class="card__info">
+                <div class="card__info-description">
+                    <p class="card__info-text">Min: 1</p>
+                    <p class="card__info-text">Резерв: 113000 P24UAH</p>
+                </div>
 
             </div>
 
-            <div class="card__checkbox-text">
-                При нажатии на кнопку "Обменять"
-                Вы соглашаетесь с
-                <a class="card__checkbox-link" href="#">пользовательским соглашением</a>
-                нашего ресурса
+            <label class="card__label user-block__label">
+                <input class="card__input user-block__input" type="text">
+
+                <span class="card__input-placeholder user-block__input-placeholder is-active">Номер карты ПриватБанка</span>
+            </label>
+
+            <div class="card__checkbox">
+                <div class="card__checkbox-block">
+                    <input class="card__checkbox-input is-active" id="accept-terms" type="checkbox" checked="">
+
+                    <label class="card__checkbox-label" for="accept-terms" type="checkbox"></label>
+                </div>
+
+                <div class="card__checkbox-text">
+                    При нажатии на кнопку "Обменять"
+                    Вы соглашаетесь с
+                    <a class="card__checkbox-link" href="#">пользовательским соглашением</a>
+                    нашего ресурса
+                </div>
             </div>
+
+            <div class="card__btn-change">Обменять</div>
         </div>
     </div>
 </div>

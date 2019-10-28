@@ -2,13 +2,14 @@
 @import './helpers/reset.scss';
 @import './helpers/variables.scss';
 @import 'style/page.scss';
-//@import './helpers/shared.scss';
+@import 'style/enter-modals.scss';
 
 
 //Desktop style
 @import './style/header.scss';
 @import './style/footer.scss';
 @import './style/sidebar-menu.scss';
-@import './style/content-exchange';
+@import './style/content-exchange.scss';
+@import './style/request.scss';
 
 //Mobile style

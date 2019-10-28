@@ -1,0 +1,44 @@
+//Request style start
+.request {
+  min-width: 540px;
+  &__title {
+    font: 500 40px / 46px $main-font;
+    color: $main-title-color;
+    letter-spacing: 0.15126px;
+  }
+  &__info {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $basic-light-grey;
+    margin-bottom: 23px;
+    &-title {
+      font: 400 18px / 21px $main-font;
+      color: $main-border-color;
+    }
+    &-result {
+      display: flex;
+      align-self: center;
+    }
+    &-img {
+      height: 28px;
+      width: 28px;
+      margin-right: 12px;
+    }
+    &-text {
+      font: 400 18px / 21px $main-font;
+      color: $basic-request-text;
+      display: flex;
+      align-self: center;
+    }
+  }
+  &__description {
+    font: 300 14px / 16px $main-font;
+    color: $basic-grey-select;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+}
+//Request style end

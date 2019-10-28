@@ -1,15 +1,24 @@
 //Variables Start
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
 
 $main-font                 : 'Ubuntu', sans-serif;
 
 $basic-white               : #fff;
 $basic-black               : #000;
 $basic-grey                : #C4C4C4;
+$basic-light-grey          : #D2D2D2;
 $basic-shadow              : rgba(50, 50, 50, 0.1);
 $basic-invisible           : rgba(0, 0, 0, 0);
 $basic-grey-select         : #9996A7;
+$basic-green               : #69A43C;
+$basic-background-modal    : rgba(10, 10, 10, 0.4);
+$basic-border-modal        : #6DD400;
+$basic-box-shadow-modal    : rgba(159, 166, 176, 0.410071);
+$basic-text-modal          : #323C5A;
+$basic-text-link-modal     : #0359FD;
+$basic-error-modal         : #FF2943;
+$basic-request-text        : #181E45;
 
 $main-color                : #550CB2;
 $main-orange-color         : #FF822E;
