@@ -1,0 +1,80 @@
+//Header Start
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    //max-width: 186px;
+    width: auto;
+    padding: 32px 24px;
+    background: $main-color;
+    &-icon {
+      width: 138px;
+      height: 81px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+  }
+
+  &__btn {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    color: $main-text-color;
+    background: #FBFBFB;
+    border: 1px solid $main-color;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font: 400 14px / 16px $main-font;
+
+    &-icon {
+      pointer-events: none;
+      height: 16px;
+      width: 16px;
+      margin-right: 9px;
+    }
+
+    &-registration {
+      color: $basic-white;
+      background: $main-color;
+    }
+
+    &-login,
+    &-logout {
+      margin-right: 16px;
+      display: none;
+      &.is-active {
+        display: flex;
+      }
+    }
+  }
+
+  &__lang {
+    &-btn {
+      border: 1px solid $main-orange-color;
+      background: $main-orange-color;
+      color: $basic-white;
+      display: none;
+      text-transform: uppercase;
+      &.is-active {
+        display: flex;
+      }
+    }
+  }
+}
+
+//Header End

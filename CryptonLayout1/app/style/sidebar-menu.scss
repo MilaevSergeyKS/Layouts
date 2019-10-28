@@ -1,0 +1,38 @@
+//Sidebar-menu style start
+.sidebar {
+  width: 186px;
+  margin-right: 34px;
+  background: $main-color;
+  border-radius: 0 0 10px 10px;
+  &__menu {
+    &-list {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      color: $basic-white;
+      padding: 24px 5px 24px 31px;
+      &.is-active {
+        color: $main-color;
+        .sidebar__menu-icon {
+          fill: $main-color;
+        }
+      }
+      &:hover {
+        color: $main-orange-color;
+        .sidebar__menu-icon {
+          fill: $main-orange-color;
+        }
+      }
+    }
+    &-text {
+      font: 400 14px / 16px $main-font;
+    }
+    &-icon {
+      height: 16px;
+      width: 16px;
+      margin-right: 16px;
+      fill: $basic-white;
+    }
+  }
+}
+//Sidebar-menu style end

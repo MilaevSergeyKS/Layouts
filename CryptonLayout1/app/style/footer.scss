@@ -1,0 +1,32 @@
+//Footer style start
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  &__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  &__text {
+    color: $main-text-color;
+    font: 300 14px / 16px $main-font;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+}
+.copyright {
+  border-bottom: 1px solid $main-border-color;
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 13px;
+  }
+}
+//Footer style end
