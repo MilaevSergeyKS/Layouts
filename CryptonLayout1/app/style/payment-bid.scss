@@ -1,0 +1,80 @@
+//Payment-bid style start
+.pay-bid {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #D2D2D2;
+    margin-bottom: 28px;
+    &:after,
+    &:before {
+      content: "";
+      height: 1px;
+      width: 36px;
+      background: #d2d2d2;
+      position: absolute;
+    }
+    &:after {
+      bottom: -1px;
+      right: -36px;
+    }
+    &:before {
+      bottom: -1px;
+      left: -36px;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 175px;
+    margin-right: 36px;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+  &__details {
+    width: calc(100% - 308px);
+  }
+  &__btn {
+    width: 280px;
+  }
+  &__icon {
+    &-currency {
+      width: 115px;
+      object-fit: contain;
+      margin-bottom: 17px;
+    }
+    &-qr {
+      width: 100%;
+      object-fit: contain;
+    }
+    &-doc {
+      height: 24px;
+      width: 24px;
+    }
+  }
+  &__text {
+    font: 300 17px / 20px $main-font;
+    color: $main-text-color;
+    &--bold {
+      font-weight: 700;
+    }
+    &--orange {
+      color: $main-orange-color;
+      font-weight: 700;
+    }
+    &--margin-bottom {
+      margin-bottom: 10px;
+    }
+    &--margin-right {
+      margin-right: 10px;
+    }
+  }
+  &__description {
+    font: 300 16px / 20px $main-font;
+    color: $main-orange-color;
+  }
+}
+//Payment-bid style end

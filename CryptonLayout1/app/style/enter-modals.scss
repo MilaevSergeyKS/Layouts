@@ -1,2 +1,17 @@
 //Enters modal style start
+.login {
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    align-self: flex-end;
+    font: 400 14px / 16px $main-font;
+    color: $main-border-color;
+    margin-bottom: 46px;
+  }
+  &__btn {
+    margin-bottom: 24px;
+  }
+}
 //Enters modal style end
