@@ -614,15 +614,42 @@
     }
   }
 }
+
 .newsletters {
   &__block {
     display: flex;
     flex-direction: column;
   }
+
   &__btn {
     width: auto;
     margin: 0 auto;
     padding: 18px 34px;
+  }
+}
+
+.profile-menu {
+  max-width: 430px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $main-color;
+  box-shadow: 0 2px 15px $basic-user-profile-shadow;
+  border-radius: 30px;
+  border: 4px solid $main-color;
+  margin-bottom: 36px;
+  &__btn {
+    height: 100%;
+    cursor: pointer;
+    color: $basic-white;
+    padding: 12px;
+    font: 500 16px / 18px $main-font;
+    border-radius: 30px;
+    &.is-active {
+      background: $basic-white;
+      color: $main-color;
+    }
   }
 }
 
