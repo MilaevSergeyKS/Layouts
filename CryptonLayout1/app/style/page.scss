@@ -125,6 +125,102 @@
       color: $main-orange-color;
     }
   }
+
+  &__table {
+    &-wrapper {
+      overflow: scroll;
+      max-height: 350px;
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  min-width: 850px;
+  border-spacing: 0;
+  margin-bottom: 12px;
+  color: $main-text-color;
+
+  &__title {
+    background: $basic-table-background;
+
+    &-text {
+      padding: 16px 0;
+    }
+  }
+
+  &__row {
+    &-cell {
+      width: calc(100% / 4);
+      padding: 15px 0;
+      white-space: nowrap;
+      border-bottom: 1px solid $basic-light-grey;
+
+      &:first-child {
+        padding-left: 10px;
+      }
+
+      &:last-child {
+        text-align: right;
+        padding-right: 10px;
+        .table__row-cell-block {
+          justify-content: flex-end;
+        }
+      }
+      &-block {
+        display: flex;
+        align-items: center;
+        &--vertical {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+    &-img {
+      margin-right: 39px;
+    }
+    &-text {
+      margin-right: 5px;
+      font: 400 14px / 20px $main-font;
+      &--bold {
+        font-weight: 700;
+      }
+      &--light {
+        color: $main-border-color;
+        &-small {
+          font: 300 12px / 14px $main-font;
+          color: $basic-grey-select;
+        }
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-btn {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 25px;
+      width: 25px;
+      margin: 0 10px;
+      font: 400 18px / 21px $main-font;
+      color: $main-text-color;
+      background: $basic-white;
+      box-shadow: 0 2px 4px $basic-nav-shadow;
+      border-radius: 3px;
+      &:hover {
+        background: $main-orange-color;
+        color: $basic-white;
+      }
+      &.is-active {
+        background: $basic-nav-background;
+        color: $basic-white;
+      }
+    }
+  }
 }
 
 .card {
@@ -639,13 +735,17 @@
   border-radius: 30px;
   border: 4px solid $main-color;
   margin-bottom: 36px;
+
   &__btn {
     height: 100%;
+    width: calc(100% / 3);
+    text-align: center;
     cursor: pointer;
     color: $basic-white;
     padding: 12px;
     font: 500 16px / 18px $main-font;
     border-radius: 30px;
+
     &.is-active {
       background: $basic-white;
       color: $main-color;

@@ -2,10 +2,205 @@
 .user-profile {
   &__wrapper {
     max-height: 350px;
-    overflow: scroll;
+    overflow: auto;
   }
   &__block {
     width: 100%;
+  }
+  &__table {
+    display: flex;
+    min-height: 300px;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    &-block {
+      position: relative;
+      width: calc(100% / 4);
+      flex: 0 0 calc(100% / 4);
+      min-width: 200px;
+    }
+    &-title {
+      height: 54px;
+      font: 500 18px / 21px $main-font;
+      color: $main-text-color;
+      padding: 16px 0;
+      background:  $basic-table-background;
+      margin-bottom: 20px;
+    }
+    &-btn {
+      //width: 240px;
+      padding: 12px;
+    }
+    &-wrapper {
+      padding: 0 36px;
+      min-width: 852px;
+    }
+  }
+  &__select {
+    position: relative;
+    &-title {
+      min-height: 28px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    &-img {
+      height: 28px;
+      width: 28px;
+      margin-right: 8px;
+    }
+    &-text {
+      font: 700 16px / 18px $main-font;
+      color: $main-text-color;
+      margin-right: 5px;
+      &--light {
+        font-weight: 400;
+      }
+    }
+    &-dropdown {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      max-height: 200px;
+      min-width: 200px;
+      background: $basic-white;
+      box-shadow: 4px 6px 16px $basic-box-shadow-modal;
+      padding: 10px;
+      z-index: 1500;
+      &-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &-password {
+    &__form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      &-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      &-btn {
+        width: 280px;
+        font-size: 14px;
+      }
+
+      &-label {
+        width: 185px;
+        margin-right: 27px;
+        margin-bottom: 0;
+      }
+
+      &-input {
+        padding-right: 12px;
+      }
+
+      &-description {
+        font-weight: 400;
+      }
+    }
+  }
+
+  &-requisites {
+    &__wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid $basic-light-grey;
+      margin-bottom: 24px;
+
+      &:after,
+      &:before {
+        content: '';
+        height: 1px;
+        width: 36px;
+        background: $basic-light-grey;
+        position: absolute;
+        bottom: -1px;
+      }
+
+      &:before {
+        left: -36px;
+      }
+
+      &:after {
+        right: -36px;
+      }
+    }
+
+    &__block {
+      max-height: 200px;
+      overflow: scroll;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    &__label {
+      width: calc((100% / 4) - 37px);
+      margin-bottom: 24px;
+    }
+
+    &__input {
+      padding-right: 12px;
+    }
+
+    &__card {
+      width: calc(100% / 4);
+      margin-bottom: 40px;
+      &.is-active {
+        .user-profile-requisites__card-dropdown {
+          display: block;
+        }
+      &-wrapper {
+        padding-right: 50px;
+        }
+      }
+      &-dropdown {
+        display: none;
+      }
+      &-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      &-img {
+        height: 48px;
+        width: 48px;
+        object-fit: contain;
+        margin-right: 20px;
+      }
+      &-text {
+        font: 500 14px / 16px $main-font;
+        color: $main-text-color;
+      }
+    }
+
+    &__btn-save {
+      width: 280px;
+      font-size: 14px;
+      margin-left: auto;
+    }
+  }
+  &-output {
+    flex-direction: column;
+    &__title {
+      margin-bottom: 20px;
+      &--orange {
+        color: $main-orange-color;
+      }
+    }
+    &__user-block {
+      min-height: auto;
+    }
   }
 }
 
@@ -41,5 +236,6 @@
     width: 24px;
   }
 }
+
 
 // User-profile style end
