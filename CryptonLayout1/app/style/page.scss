@@ -147,6 +147,9 @@
     &-text {
       padding: 16px 0;
     }
+    .table__row-cell {
+      border-bottom: 0;
+    }
   }
 
   &__row {
@@ -185,6 +188,9 @@
       &--bold {
         font-weight: 700;
       }
+      &--right {
+        align-self: flex-end;
+      }
       &--light {
         color: $main-border-color;
         &-small {
@@ -192,12 +198,22 @@
           color: $basic-grey-select;
         }
       }
+      &--orange {
+        color: $main-orange-color;
+      }
+      &--red {
+        color: $basic-error-table;
+      }
+      &--green {
+        color: $basic-green;
+      }
     }
   }
   &__nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
     &-btn {
       cursor: pointer;
       display: flex;
