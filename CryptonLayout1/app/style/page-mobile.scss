@@ -1,0 +1,9 @@
+//Page-mobile shared style start
+@media (max-width: $mobile-size) {
+.page {
+  &__sidebar {
+    display: none;
+  }
+}
+}
+//Page-mobile shared style end

@@ -2,6 +2,7 @@
 @import './helpers/reset.scss';
 @import './helpers/variables.scss';
 @import 'style/page.scss';
+@import 'style/page-mobile.scss';
 @import 'style/custom-table.scss';
 @import 'style/enter-modals.scss';
 
@@ -15,5 +16,6 @@
 @import './style/payment-bid.scss';
 @import './style/reserve-rate.scss';
 @import './style/user-profile.scss';
+@import './style/bonus.scss';
 
 //Mobile style
