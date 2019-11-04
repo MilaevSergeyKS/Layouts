@@ -1,13 +1,11 @@
 //Reset and plugins style
 @import './helpers/reset.scss';
 @import './helpers/variables.scss';
-@import 'style/page.scss';
-@import 'style/page-mobile.scss';
-@import 'style/custom-table.scss';
-@import 'style/enter-modals.scss';
-
 
 //Desktop style
+@import 'style/page.scss';
+@import 'style/custom-table.scss';
+@import 'style/enter-modals.scss';
 @import './style/header.scss';
 @import './style/footer.scss';
 @import './style/sidebar-menu.scss';
@@ -19,3 +17,4 @@
 @import './style/bonus.scss';
 
 //Mobile style
+@import 'style/page-mobile.scss';

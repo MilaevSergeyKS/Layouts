@@ -4,15 +4,27 @@
   align-items: center;
   justify-content: space-between;
 
+  &__burger {
+    display: none;
+  }
+
   &__logo {
-    //max-width: 186px;
     width: auto;
     padding: 32px 24px;
     background: $main-color;
+
     &-icon {
       width: 138px;
       height: 81px;
+
+      &--mobile {
+        display: none;
+      }
     }
+  }
+
+  &__nav--mobile {
+    display: none;
   }
 }
 
@@ -57,6 +69,7 @@
     &-logout {
       margin-right: 16px;
       display: none;
+
       &.is-active {
         display: flex;
       }
@@ -70,8 +83,72 @@
       color: $basic-white;
       display: none;
       text-transform: uppercase;
+
       &.is-active {
         display: flex;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-size) {
+  .header {
+    background: $main-color;
+    padding: 16px;
+
+    &__nav {
+      display: none;
+
+      &--mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 0 36px;
+      }
+    }
+
+    &__burger {
+      display: block;
+      height: 17px;
+      width: 22px;
+
+      &-icon {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__logo {
+      margin: 0 auto;
+      padding: 0;
+
+      &-icon {
+        display: none;
+        height: 38px;
+        width: 156px;
+
+        &--mobile {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .nav {
+    &__btn {
+      &-login,
+      &-logout {
+        margin-bottom: 20px;
+        margin-right: 0;
+        padding: 18px 36px;
+      }
+
+      &-registration {
+        padding: 18px 36px;
+        background: $main-orange-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
       }
     }
   }

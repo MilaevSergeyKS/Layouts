@@ -1,5 +1,17 @@
 <!--Sidebar-menu start-->
-<div class="page__sidebar sidebar">
+<div class="sidebar">
+    <div class="sidebar__mobile">
+        <svg class="page__icon-svg sidebar__mobile-close">
+            <use xlink:href="./images/icons-sprite.svg#icon-close-mobile"></use>
+        </svg>
+
+        <div class="nav__lang sidebar__mobile-lang">
+            <a class="nav__btn nav__lang-btn sidebar__mobile-lang-btn is-active" href="#">Ru</a>
+
+            <a class="nav__btn nav__lang-btn sidebar__mobile-lang-btn" href="#">En</a>
+        </div>
+    </div>
+
     <div class="sidebar__wrapper">
         <ul class="sidebar__menu">
             <li class="sidebar__menu-list">
@@ -50,6 +62,32 @@
                 <span class="sidebar__menu-text">Заявки</span>
             </li>
         </ul>
+    </div>
+
+    <div class="header__nav--mobile">
+        <a class="nav__btn nav__btn-login is-active" href="#">
+            <svg class="page__icon-svg nav__btn-icon">
+                <use xlink:href="./images/icons-sprite.svg#icon-enter"></use>
+            </svg>
+
+            <span class="nav__btn-text">Вход</span>
+        </a>
+
+        <a class="nav__btn nav__btn-logout" href="#">
+            <svg class="page__icon-svg nav__btn-icon">
+                <use xlink:href="./images/icons-sprite.svg#icon-enter"></use>
+            </svg>
+
+            <span class="nav__btn-text">Выход</span>
+        </a>
+
+        <a class="nav__btn-registration" href="#">
+            <svg class="page__icon-svg nav__btn-icon">
+                <use xlink:href="./images/icons-sprite.svg#icon-registration"></use>
+            </svg>
+
+            <span>Регистрация</span>
+        </a>
     </div>
 </div>
 <!--Sidebar-menu end-->

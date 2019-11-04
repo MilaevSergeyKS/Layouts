@@ -183,6 +183,9 @@
         color: $main-text-color;
       }
     }
+    &__btn-show {
+      display: none;
+    }
 
     &__btn-save {
       width: 280px;
@@ -237,5 +240,70 @@
   }
 }
 
-
+@media (max-width: $mobile-size) {
+  .user-profile {
+    &__table {
+      flex-direction: column;
+      &-block {
+        width: 100%;
+      }
+    }
+    &-requisites {
+      &__wrapper {
+        flex-wrap: wrap;
+      }
+      &__label {
+        width: 50%;
+        &:nth-child(odd) {
+          padding-right: 15px;
+        }
+      }
+      &__block {
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      &__card {
+        width: 100%;
+        margin-bottom: 20px;
+        &-img {
+          height: 30px;
+          width: 30px;
+        }
+      }
+      &__btn-show {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: 400 16px / 18px $main-font;
+        color: $basic-white;
+        padding: 17px 17px 17px 60px;
+        background: $main-color;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        &-circle {
+          height: 41px;
+          width: 41px;
+          position: absolute;
+          left: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          border-radius: 30px;
+          background: $basic-white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &-icon {
+          height: 13px;
+          width: 13px;
+        }
+      }
+      &__btn-save {
+        margin: 0 auto;
+      }
+    }
+  }
+}
 // User-profile style end

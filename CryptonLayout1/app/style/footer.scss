@@ -4,16 +4,19 @@
   right: 0;
   bottom: 0;
   left: 0;
+
   &__copyright {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 8px;
   }
+
   &__text {
     color: $main-text-color;
     font: 300 14px / 16px $main-font;
   }
+
   &__info {
     display: flex;
     align-items: center;
@@ -21,12 +24,34 @@
     padding-bottom: 20px;
   }
 }
+
 .copyright {
   border-bottom: 1px solid $main-border-color;
+
   &__description {
     display: flex;
     flex-direction: column;
     padding-bottom: 13px;
   }
 }
+
+@media (max-width: $mobile-size) {
+  .footer {
+    padding: 0 14px;
+    &__info {
+      flex-direction: column;
+      align-items: flex-start;
+      &-link {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .copyright {
+    &__link {
+      display: none;
+    }
+  }
+
+}
+
 //Footer style end

@@ -5,6 +5,9 @@
   margin-right: 34px;
   background: $main-color;
   border-radius: 0 0 10px 10px;
+  &__mobile {
+    display: none;
+  }
   &__menu {
     &-list {
       cursor: pointer;
@@ -33,6 +36,55 @@
       width: 16px;
       margin-right: 16px;
       fill: $basic-white;
+    }
+  }
+}
+
+@media (max-width: $mobile-size) {
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 8000;
+    width: 100%;
+    margin-right: 0;
+    &.is-active {
+      display: block;
+    }
+    &__wrapper {
+      margin-bottom: 76px;
+    }
+    &__mobile {
+      display: flex;
+      padding: 20px 36px 0 20px;
+      align-self: center;
+      justify-content: space-between;
+      &--vertical {
+        flex-direction: column;
+      }
+      &-lang {
+        &-btn {
+          min-height: 32px;
+          min-width: 64px;
+          padding: 8px 14px;
+        }
+      }
+      &-close {
+        height: 20px;
+        width: 20px;
+      }
+    }
+    &__menu {
+      &-list {
+        padding: 18px 5px 18px 40px;
+      }
+      &-icon {
+        height: 24px;
+        width: 24px;
+      }
     }
   }
 }

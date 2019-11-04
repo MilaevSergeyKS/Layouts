@@ -65,5 +65,33 @@
   }
 }
 
+@media (max-width: $mobile-size) {
+  .bonus {
+    .page__table-wrapper {
+      width: 100%;
+      border-right: 0;
+      border-bottom: 1px solid $basic-light-grey;
+    }
+    &__wrapper {
+      flex-direction: column;
+      .table__row-cell {
+        white-space: normal;
+        width: calc(100% / 3);
+      }
+    }
+    &__container {
+      width: 100%;
+      &-title {
+        display: none;
+      }
+      &-item {
+        padding: 10px 0;
+      }
+    }
+    &__block {
+      padding-left: 0;
+    }
+  }
 
+}
 //bonus style end
