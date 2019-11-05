@@ -77,4 +77,38 @@
     color: $main-orange-color;
   }
 }
+@media (max-width: $mobile-size) {
+  .pay-bid {
+    &__wrapper {
+      flex-direction: column-reverse;
+      &:before,
+      &:after {
+        content: none;
+        display: none;
+      }
+    }
+    &__icon-doc {
+      display: none;
+    }
+    &__container {
+      margin: 0 auto;
+    }
+    &__block {
+      flex-direction: column-reverse;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 13px;
+    }
+    &__details {
+      width: 100%;
+    }
+    &__btn {
+      margin-bottom: 20px;
+    }
+    &__description {
+      font-size: 14px;
+    }
+  }
+}
 //Payment-bid style end

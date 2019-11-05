@@ -2,12 +2,14 @@
 @media (max-width: $mobile-size) {
   .page {
     padding-bottom: 210px;
+
     &__content {
       &-title {
         font-size: 24px;
         line-height: 28px;
         margin-bottom: 20px;
       }
+
       &-block {
         padding: 14px;
       }
@@ -16,5 +18,44 @@
   .page__content {
     width: 100%;
   }
+  .profile-menu {
+    &__btn {
+      font-size: 14px;
+    }
+  }
+  .affiliate-program__title,
+  .faq__title,
+  .newsletters__title,
+  .privacy-policy__title,
+  .terms-of-use__title {
+    font-size: 18px;
+  }
+
+  .faq {
+    &__wrapper {
+      max-height: 100%;
+    }
+  }
+  .affiliate-program__wrapper,
+  .faq__wrapper,
+  .newsletters__wrapper,
+  .privacy-policy__wrapper,
+  .terms-of-use__wrapper {
+    max-height: 100%;
+  }
+  .server-error {
+    padding-top: 50px;
+    &__icon {
+      height: 110px;
+      width: 110px;
+    }
+    &__title {
+      font-size: 80px;
+    }
+    &__description {
+      font-size: 24px;
+    }
+  }
 }
+
 //Page-mobile shared style end

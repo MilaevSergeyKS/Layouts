@@ -43,4 +43,9 @@
     display: inline-block;
   }
 }
+@media (max-width: $mobile-size) {
+  .request {
+    min-width: 0;
+  }
+}
 //Request style end

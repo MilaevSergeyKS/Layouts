@@ -104,4 +104,16 @@
   }
 }
 
+@media (max-width: $mobile-size) {
+  .reserve-rate {
+    flex-direction: column;
+    .page__content-block {
+      width: 100%;
+      &:first-child {
+        border-right: 0;
+        border-bottom: 1px solid $basic-light-grey;
+      }
+    }
+  }
+}
 //Reverse-rate style end
