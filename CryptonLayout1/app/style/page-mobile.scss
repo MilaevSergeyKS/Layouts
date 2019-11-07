@@ -4,6 +4,9 @@
     padding-bottom: 210px;
 
     &__content {
+      &-wrapper {
+        flex-direction: column;
+      }
       &-title {
         font-size: 24px;
         line-height: 28px;
@@ -12,6 +15,9 @@
 
       &-block {
         padding: 14px;
+        &--half {
+          width: 100%;
+        }
       }
     }
   }
@@ -54,6 +60,12 @@
     }
     &__description {
       font-size: 24px;
+    }
+  }
+  .modal {
+    align-items: flex-start;
+    &__container {
+      padding: 36px 20px;
     }
   }
 }

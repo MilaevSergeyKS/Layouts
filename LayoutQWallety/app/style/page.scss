@@ -1,0 +1,216 @@
+//Page style start
+.page {
+  width: 100%;
+  margin: 0 auto;
+  &__content {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  &__logo {
+    height: 46px;
+    width: 122px;
+  }
+  &__title {
+    font: 500 28px / 33px $main-font;
+    color: $basic-black;
+    letter-spacing: 0.014em;
+    margin-bottom: 16px;
+  }
+  &__text {
+    font: 400 14px / 20px $main-font;
+    color: $page-text-color;
+    margin-bottom: 24px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    &-btn {
+      cursor: pointer;
+      text-align: center;
+      min-width: 140px;
+      padding: 20px 24px;
+      font: 500 12px / 14px $main-font;
+      letter-spacing: 0.014em;
+      text-transform: uppercase;
+      color: $basic-white;
+      background: $basic-orange;
+      border: 1px solid $basic-orange;
+      border-radius: 30px;
+      &--margin-right {
+        margin-right: 25px;
+      }
+      &--opacity {
+        border: 1px solid $basic-white;
+        background: $btn-bg-opacity;
+      }
+    }
+  }
+  &__block {
+    min-height: 525px;
+    display: flex;
+    border-top: 1px solid $basic-border;
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &--reverse {
+        flex-direction: row-reverse;
+      }
+    }
+    &-icon {
+      height: 260px;
+      width: 460px;
+    }
+    &-container {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+////////////
+////////////
+////////////
+.header {
+  min-height: 80px;
+  background: $basic-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px $basic-shadow;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    &-btn {
+      cursor: pointer;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 28px;
+      font: 500 12px / 14px $main-font;
+      color: $basic-black;
+      text-transform: uppercase;
+      letter-spacing: 0.014em;
+      border: 1px solid $basic-black;
+      border-radius: 30px;
+      &--margin {
+        margin-right: 23px;
+      }
+      &--orange {
+        background: $basic-orange;
+        border: 1px solid $basic-orange;
+        color: $basic-white;
+      }
+      &-icon {
+        height: 14px;
+        width: 11px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+////////////
+////////////
+////////////
+
+.section-main {
+  height: calc(100vh - 80px);
+  background: url("../img/main-bg.png") center center no-repeat;
+  background-size: cover;
+  &__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__title {
+    text-align: center;
+    font: 500 32px / 38px $main-font;
+    color: $basic-orange;
+    text-transform: uppercase;
+    letter-spacing: 0.014em;
+    margin-bottom: 12px;
+  }
+  &__subtitle {
+    font: 400 16px / 24px $main-font;
+    color: $basic-white;
+    margin-bottom: 10px;
+  }
+}
+
+////////////
+////////////
+////////////
+
+.footer {
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .page__block {
+    min-height: 83px;
+  }
+  &__block {
+    min-height: 112px!important;
+  }
+  .page__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page__logo {
+    margin-right: 32px;
+  }
+  &__lang {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    font: 400 16px / 19px $main-font;
+    color: $page-text-color;
+    letter-spacing: 0.014em;
+    &--uppercase {
+      text-transform: uppercase;
+    }
+    &--divider {
+      position: relative;
+      padding-right: 28px;
+      &:after {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        background: $page-text-color;
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12px;
+      }
+      &:last-child {
+        padding-right: 0;
+        &:after {
+          content: none;
+        }
+      }
+    }
+    &.is-active {
+      color: $basic-black;
+      font-weight: 500;
+    }
+  }
+}
+
+//Page style end

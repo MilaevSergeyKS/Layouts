@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const folderPath = "./CryptonLayout1";
+const folderPath = "./LayoutQWallety";
 
 module.exports = {
     entry: folderPath + "/app/App.js",
@@ -15,7 +15,9 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         contentBase: path.join(__dirname, folderPath),
-        port: 8081
+        port: 8081,
+        // host: '192.168.1.140'
+        // host: '192.168.1.140' - параметр для доступа по локальной сети
     },
     module: {
         rules: [
