@@ -68,6 +68,19 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(ico)$/i,
+                use: [
+
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[name].[ext]",
+                            outputPath: "images/"
+                        }
+                    },
+                ]
+            },
+            {
                 test: /\.svg$/,
                 use: [
                     {
