@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const folderPath = "./LayoutQWallety";
+const folderPath = "./CryptonLayout1";
 
 module.exports = {
     entry: folderPath + "/app/App.js",
