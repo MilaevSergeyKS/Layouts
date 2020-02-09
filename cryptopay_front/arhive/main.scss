@@ -1,0 +1,202 @@
+section {
+  max-width: 926px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: $basic-white;
+  border-bottom: 2px solid $grey-border;
+  section {
+    max-width: 1140px;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  span {
+    font: 400 25px / 28px $main-font;
+    color: $text-black;
+  }
+  a {
+    color: $text-link-color;
+  }
+  button {
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    height: 38px;
+    width: 38px;
+    padding: 5px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: $basic-grey;
+    border: 1px solid $basic-grey;
+    font: 400 16px / 18px $main-font;
+    margin-right: 14px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      border: 1px solid $text-black;
+      color: $text-black;
+    }
+  }
+}
+
+//Invoice style start
+
+nav {
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  button {
+    background: none;
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    font: 400 16px / 19px $main-font;
+    color: $text-grey;
+    svg {
+      height: 8px;
+      width: 8px;
+      margin-right: 8px;
+    }
+  }
+  h3 {
+    margin: 0 auto;
+    font: 700 24px / 28px $main-font;
+    color: $text-title-color;
+  }
+}
+
+main {
+  position: relative;
+  padding: 24px 48px;
+  border: 1px solid $lightGrey-border;
+  border-radius: 8px;
+  background: $basic-white;
+  display: flex;
+  flex-direction: column;
+  header {
+    border-bottom: 0;
+    margin-bottom: 24px;
+    svg {
+      height: 61px;
+      width: 136px;
+    }
+    div {
+      position: absolute;
+      top: 24px;
+      right: -24px;
+      display: flex;
+      align-items: center;
+      background: $basic-orange;
+      padding: 8px 12px;
+      color: $basic-white;
+      &:after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        right: 0;
+        border-style: solid;
+        border-width: 16px 24px 0 0;
+        border-color: #BA6600 transparent transparent transparent;
+      }
+      svg {
+        height: 16px;
+        width: 16px;
+        margin-right: 9px;
+        animation: spin infinite linear 1000ms;
+      }
+      p {
+        margin-bottom: 4px;
+      }
+      span {
+        font: 400 14px / 16px $main-font;
+        color: $basic-white;
+        opacity: .8;
+      }
+    }
+  }
+  article {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    aside {
+      width: calc(100% - 232px);
+      div {
+        line-height: 19px;
+        color: $text-grey;
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        span {
+          margin-bottom: 8px;
+          &.no-margin {
+            margin-bottom: 0;
+          }
+        }
+      }
+      b {
+        font: 500 18px / 21px $main-font;
+        color: $text-title-color;
+      }
+      p {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $lightGrey-border;
+        border-radius: 6px;
+        padding: 19px 46px 19px 27px;
+        svg {
+          position: absolute;
+          top: 50%;
+          right: 27px;
+          transform: translateY(-50%);
+          height: 22px;
+          width: 19px;
+        }
+      }
+    }
+    .qr {
+      height: 180px;
+      width: 180px;
+      background: $basic-background;
+    }
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      width: calc(100% - 232px);
+      border-radius: 6px;
+      border: 1px solid $basic-orange;
+      padding: 16px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      color: $text-grey;
+    }
+    button {
+      outline: none;
+      height: 48px;
+      width: 202px;
+      overflow: hidden;
+      border-radius: 8px;
+      background: $basic-background;
+      color: $basic-white;
+      font: 400 16px / 19px $main-font;
+    }
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
