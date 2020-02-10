@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru" theme="dark">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Involve</title>
-    <meta name="description" content="">
-
-</head>
-<body>
-<main>
-    <header>
+    <meta name="description" content="" />
+  </head>
+  <body>
+    <main>
+      <header class="menu-open">
         <svg>
-            <use xlink:href="./images/icons-sprite.svg#logo"></use>
-        </svg>
-
-
-        <svg>
-            <use xlink:href="./images/icons-sprite.svg#menu"></use>
+          <use xlink:href="./images/icons-sprite.svg#logo"></use>
         </svg>
 
         <svg>
-            <use xlink:href="./images/icons-sprite.svg#close"></use>
+          <use xlink:href="./images/icons-sprite.svg#menu"></use>
         </svg>
-    </header>
 
-    <nav>
-        <div class="is-active">01</div>
+        <svg>
+          <use xlink:href="./images/icons-sprite.svg#close"></use>
+        </svg>
+      </header>
+
+      <nav>
+        <div class="active">01</div>
         <div>02</div>
         <div>03</div>
         <div>04</div>
         <div>05</div>
         <div>06</div>
-    </nav>
+      </nav>
 
+      <!--    ${require('./partials/pop-up-menu.html')}-->
+      ${require('./partials/main.html')}
+      ${require('./partials/service-box.html')}
+      ${require('./partials/about.html')}
 
-    ${require('./partials/pop-up-menu.html')}
-    ${require('./partials/main.html')}
-
-    <div class="contact-us">
+      <div class="contact-us">
         <svg>
-            <use xlink:href="./images/icons-sprite.svg#contact-us"></use>
+          <use xlink:href="./images/icons-sprite.svg#contact-us"></use>
         </svg>
 
         <span>Связаться с нами</span>
-    </div>
-</main>
-</body>
+      </div>
+    </main>
+  </body>
 </html>

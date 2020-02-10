@@ -1,12 +1,22 @@
 //Page shared style start
 body {
-  background: #1C2426;
+  background: #1c2426;
 }
 
 main {
   position: relative;
 }
 
+.title {
+  font: 700 48px / 56px var(--font-roboto-slab);
+  color: var(--secondary-text-color);
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 22px;
+  span {
+    color: var(--main-text-color);
+  }
+}
 nav {
   position: fixed;
   top: 50%;
@@ -26,7 +36,7 @@ nav {
       margin-bottom: 0;
     }
 
-    &.is-active {
+    &.active {
       color: var(--main-text-color);
     }
   }
@@ -85,6 +95,21 @@ header {
 
     &:last-child {
       display: none;
+      cursor: pointer;
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  &.menu-open {
+    svg {
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:last-child {
+        display: block;
+      }
     }
   }
 }
@@ -106,6 +131,7 @@ section {
       position: relative;
       padding-left: 98px;
       transform: translateY(-50%);
+
       & > svg:first-child {
         height: auto;
         width: 412px;
@@ -114,26 +140,35 @@ section {
 
     div {
       position: relative;
-      span {
-        position: absolute;
-        left: 230px;
-        top: 12px;
-        min-height: 80px;
-        z-index: 2;
-        padding: 12px;
-        font: 400 48px / 48px var(--font-crete-round);
-        color: var(--main-small-cards-text-color);
-        background: var(--main-small-cards-background-color);
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
 
-        &.front {
-          z-index: 5;
-          top: 0;
-          left: 206px;
-          color: #ffffff;
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      div.cards {
+        & > div {
+          background: var(--main-small-cards-background-color);
+          position: absolute;
+          left: 230px;
+          top: 12px;
+          height: 80px;
+          z-index: 2;
+          padding: 12px;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+
+          &.front {
+            z-index: 5;
+            top: 0;
+            left: 206px;
+            color: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+            svg {
+              fill: #ffffff;
+            }
+          }
+
+          svg {
+            fill: var(--main-small-cards-fill-color);
+          }
         }
       }
     }
@@ -147,6 +182,7 @@ section {
     }
 
     .social-link {
+      z-index: 1000;
       position: absolute;
       left: 0;
       bottom: 32px;
@@ -154,7 +190,7 @@ section {
       a {
         margin-right: 59px;
         font: 400 12px / 16px var(--font-manrope);
-        letter-spacing: .24em;
+        letter-spacing: 0.24em;
         text-transform: uppercase;
 
         color: var(--secondary-text-color);
@@ -165,7 +201,265 @@ section {
       }
     }
   }
-  .pop-up {
+
+  &.pop-up {
+    z-index: 900;
     position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(28, 36, 38, 0.9);
+    backdrop-filter: blur(10px);
+
+    & > div {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      & > div {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        &:first-child {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          a {
+            font: 700 48px / 52px var(--font-roboto-slab);
+            color: var(--secondary-text-color);
+            margin-bottom: 36px;
+            display: flex;
+            align-items: center;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            &.active {
+              color: var(--main-text-color);
+            }
+
+            & > span {
+              margin-right: 20px;
+            }
+
+            svg {
+              height: 22px;
+              width: 14px;
+            }
+          }
+        }
+        &:last-child {
+          display: flex;
+          flex-wrap: wrap;
+          & > div {
+            cursor: pointer;
+            min-height: 118px;
+            width: 50%;
+            h3 {
+              font: 700 24px / 33px var(--font-manrope);
+              color: var(--main-text-color);
+            }
+            p {
+              font: 400 14px / 20px var(--font-manrope);
+              color: var(--secondary-text-color);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.service-box {
+    display: flex;
+    align-items: center;
+
+    & > div {
+      height: 100%;
+      &:first-child {
+        padding-right: 85px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & > div {
+          h3 {
+            font: 700 24px / 32px var(--font-manrope);
+            color: var(--main-blue-color);
+            text-align: right;
+          }
+          svg {
+            height: 100px;
+            width: 400px;
+            margin-bottom: 26px;
+          }
+          p {
+            font: 400 14px /24px var(--font-manrope);
+            color: var(--main-text-color);
+          }
+        }
+      }
+      &:last-child {
+        position: relative;
+        .wrapper {
+          height: 100%;
+          display: flex;
+          overflow: scroll;
+          .column {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            &:first-child {
+              padding-right: 6px;
+            }
+
+            &:last-child {
+              padding-left: 6px;
+              padding-top: 73px;
+            }
+
+            .block {
+              min-height: 300px;
+              padding: 36px 28px;
+              display: flex;
+              flex-direction: column;
+              background: var(--service-box-card-background-color);
+              margin: 6px 0;
+
+              &:first-child {
+                margin-top: 0;
+              }
+
+              &:last-child {
+                margin-bottom: 6px;
+              }
+
+              & > svg {
+                max-height: 56px;
+                max-width: 56px;
+                margin-bottom: 14px;
+              }
+
+              h3 {
+                font: 700 32px / 47px var(--font-manrope);
+                color: var(--main-text-color);
+                letter-spacing: 0.02em;
+                margin-bottom: 8px;
+              }
+
+              p {
+                font: 400 15px / 24px var(--font-manrope);
+                color: var(--main-text-color);
+                margin-bottom: 16px;
+              }
+
+              & > a {
+                display: flex;
+                align-items: center;
+                align-self: flex-end;
+
+                span {
+                  font: 400 14px / 19px var(--font-manrope);
+                  color: var(--main-blue-color);
+                  margin-right: 4px;
+                }
+
+                svg {
+                  height: 8px;
+                  width: 8px;
+                }
+              }
+            }
+          }
+        }
+        .shadow {
+          z-index: 10;
+          position: absolute;
+          height: 120px;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: linear-gradient(
+            270deg,
+            #1c2426 0%,
+            rgba(28, 36, 38, 0) 100%
+          );
+        }
+      }
+    }
+  }
+  &.about {
+    display: flex;
+    align-items: center;
+
+    & > div {
+      height: 100%;
+      &:first-child {
+        max-width: 540px;
+        padding-right: 85px;
+        .title {
+          text-align: left;
+        }
+        .description {
+          font: 400 14px / 21px var(--font-manrope);
+          color: var(--secondary-text-color);
+          p {
+            padding-bottom: 40px;
+          }
+          h4 {
+            color: var(--main-text-color);
+            margin-bottom: 12px;
+          }
+        }
+      }
+      &:last-child {
+        position: relative;
+        .wrapper {
+          height: 100%;
+          display: flex;
+          overflow: scroll;
+          .column {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            &:first-child {
+              padding-right: 6px;
+            }
+
+            &:last-child {
+              padding-left: 6px;
+              padding-top: 73px;
+            }
+
+            .block {
+              min-height: 374px;
+              min-width: 264px;
+              margin: 6px 0;
+
+              &:first-child {
+                margin-top: 0;
+              }
+
+              &:last-child {
+                margin-bottom: 6px;
+              }
+
+              img {
+                cursor: pointer;
+                filter: grayscale(1);
+                transition: all 300ms linear;
+                &:hover {
+                  filter: grayscale(0);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

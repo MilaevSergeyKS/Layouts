@@ -3,7 +3,9 @@ import objectFitImages from "object-fit-images";
 import svg4everybody from "svg4everybody";
 
 // import MainComponent from "./js/main-component";
+// import { scrollPage } from "./js/scroll-page";
 
+// scrollPage();
 objectFitImages();
 svg4everybody();
 

@@ -36,8 +36,7 @@
 //  font-style: normal;
 //  font-weight: 200; }
 
-@import url('https://fonts.googleapis.com/css?family=Crete+Round&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap');
 $font-crete-round          : 'Crete Round', serif;
 $font-manrope-3            : 'Manrope', serif;
 $mobile-size               : 767px;
@@ -46,12 +45,14 @@ $basic-white               : #fff;
 $basic-black               : #000;
 
 :root[theme='dark'] {
-  --font-crete-round: 'Crete Round', serif;
+  --font-roboto-slab: 'Roboto Slab', serif;
   --font-manrope: 'Manrope', serif;
+  --main-blue-color: #8AD8FF;
   --secondary-text-color:  #8E8E98;
   --main-text-color:  #ECECEC;
+  --service-box-card-background-color:  #1F282C;
   --contact-us-background-color:  #3E4445;
   --main-small-cards-background-color:  #2B3438;
-  --main-small-cards-text-color:  #404749;
+  --main-small-cards-fill-color:  #404749;
 }
 //Variables End
