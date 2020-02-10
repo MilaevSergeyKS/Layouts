@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" theme="dark">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,22 @@
     <meta name="theme-color" content="#ffffff">
     <title>Involve</title>
     <meta name="description" content="">
+    <style>
+        :root{
+            --text-color: red;
+        }
+        :root[theme='dark'] {
+            --text-color: blue;
+        }
 
+        .page {
+            color: var(--text-color);
+        }
+    </style>
 </head>
 <body>
-<div class="root">
+<div class="page">
+    <span>TExt for custom</span>
     ${require('./partials/404.html')}
 </div>
 </body>
