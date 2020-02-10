@@ -1,12 +1,57 @@
 //Variables Start
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-ExtraBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 800; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300; }
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
+//@font-face {
+//  font-family: "Manrope";
+//  src: url("/fonts/Manrope-ExtraLight.woff2") format("woff2");
+//  font-style: normal;
+//  font-weight: 200; }
 
-$main-font                 : 'Ubuntu', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Crete+Round&display=swap');
+
+$font-crete-round          : 'Crete Round', serif;
+$font-manrope-3            : 'Manrope', serif;
 $mobile-size               : 767px;
 
 $basic-white               : #fff;
 $basic-black               : #000;
 
-
+:root[theme='dark'] {
+  --font-crete-round: 'Crete Round', serif;
+  --font-manrope: 'Manrope', serif;
+  --secondary-text-color:  #8E8E98;
+  --main-text-color:  #ECECEC;
+  --contact-us-background-color:  #3E4445;
+  --main-small-cards-background-color:  #2B3438;
+  --main-small-cards-text-color:  #404749;
+}
 //Variables End

@@ -7,23 +7,45 @@
     <meta name="theme-color" content="#ffffff">
     <title>Involve</title>
     <meta name="description" content="">
-    <style>
-        :root{
-            --text-color: red;
-        }
-        :root[theme='dark'] {
-            --text-color: blue;
-        }
 
-        .page {
-            color: var(--text-color);
-        }
-    </style>
 </head>
 <body>
-<div class="page">
-    <span>TExt for custom</span>
-    ${require('./partials/404.html')}
-</div>
+<main>
+    <header>
+        <svg>
+            <use xlink:href="./images/icons-sprite.svg#logo"></use>
+        </svg>
+
+
+        <svg>
+            <use xlink:href="./images/icons-sprite.svg#menu"></use>
+        </svg>
+
+        <svg>
+            <use xlink:href="./images/icons-sprite.svg#close"></use>
+        </svg>
+    </header>
+
+    <nav>
+        <div class="is-active">01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>05</div>
+        <div>06</div>
+    </nav>
+
+
+    ${require('./partials/pop-up-menu.html')}
+    ${require('./partials/main.html')}
+
+    <div class="contact-us">
+        <svg>
+            <use xlink:href="./images/icons-sprite.svg#contact-us"></use>
+        </svg>
+
+        <span>Связаться с нами</span>
+    </div>
+</main>
 </body>
 </html>
