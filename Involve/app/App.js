@@ -2,10 +2,10 @@ import "./App.scss";
 import objectFitImages from "object-fit-images";
 import svg4everybody from "svg4everybody";
 
-// import MainComponent from "./js/main-component";
-// import { scrollPage } from "./js/scroll-page";
+import { scrollPage, selectOpenHide } from "./js/main";
 
-// scrollPage();
+scrollPage();
+selectOpenHide()
 objectFitImages();
 svg4everybody();
 

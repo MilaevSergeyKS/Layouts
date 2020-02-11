@@ -3,32 +3,38 @@
   font-family: "Manrope";
   src: url("../fonts/Manrope-ExtraBold.woff2") format("woff2");
   font-style: normal;
-  font-weight: 800; }
+  font-weight: 800;
+}
 @font-face {
   font-family: "Manrope";
   src: url("../fonts/Manrope-Bold.woff2") format("woff2");
   font-style: normal;
-  font-weight: 700; }
+  font-weight: 700;
+}
 @font-face {
   font-family: "Manrope";
   src: url("../fonts/Manrope-SemiBold.woff2") format("woff2");
   font-style: normal;
-  font-weight: 600; }
+  font-weight: 600;
+}
 @font-face {
   font-family: "Manrope";
   src: url("../fonts/Manrope-Medium.woff2") format("woff2");
   font-style: normal;
-  font-weight: 500; }
+  font-weight: 500;
+}
 @font-face {
   font-family: "Manrope";
   src: url("../fonts/Manrope-Regular.woff2") format("woff2");
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 400;
+}
 @font-face {
   font-family: "Manrope";
   src: url("../fonts/Manrope-Light.woff2") format("woff2");
   font-style: normal;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 //@font-face {
 //  font-family: "Manrope";
@@ -36,23 +42,28 @@
 //  font-style: normal;
 //  font-weight: 200; }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap');
-$font-crete-round          : 'Crete Round', serif;
-$font-manrope-3            : 'Manrope', serif;
-$mobile-size               : 767px;
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap");
+$font-crete-round: "Crete Round", serif;
+$font-manrope-3: "Manrope", serif;
+$mobile-size: 767px;
 
-$basic-white               : #fff;
-$basic-black               : #000;
+$basic-white: #fff;
+$basic-black: #000;
 
-:root[theme='dark'] {
-  --font-roboto-slab: 'Roboto Slab', serif;
-  --font-manrope: 'Manrope', serif;
-  --main-blue-color: #8AD8FF;
-  --secondary-text-color:  #8E8E98;
-  --main-text-color:  #ECECEC;
-  --service-box-card-background-color:  #1F282C;
-  --contact-us-background-color:  #3E4445;
-  --main-small-cards-background-color:  #2B3438;
-  --main-small-cards-fill-color:  #404749;
+:root[theme="dark"] {
+  --font-roboto-slab: "Roboto Slab", serif;
+  --font-manrope: "Manrope", serif;
+  --main-blue-color: #8ad8ff;
+  --invisible-color: rgba(0, 0, 0, 0);
+  --secondary-text-color: #8e8e98;
+  --main-text-color: #ececec;
+  --btn-dark-text-color: #1c2426;
+  --btn-border-color: #bbbbbb;
+  --service-box-card-background-color: #1f282c;
+  --contact-us-background-color: #3e4445;
+  --main-small-cards-background-color: #2b3438;
+  --main-small-cards-fill-color: #404749;
+  --input-border-color: #2E3538;
+  --input-hover-color: #323C3F;
 }
 //Variables End
