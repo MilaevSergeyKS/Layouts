@@ -1,154 +1,195 @@
 <!--<!DOCTYPE html>-->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Piastrix Email Layout2</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        table {
-            margin: 0;
-            padding: 0;
-            border-collapse: collapse;
-        }
+      table {
+        margin: 0;
+        padding: 0;
+        border-collapse: collapse;
+      }
 
+      span {
+        -webkit-text-size-adjust: none;
+      }
 
-        span {
-            -webkit-text-size-adjust: none;
+      img {
+        border: 0;
+        display: block;
+      }
 
-        }
+      hr {
+        border: none; /* Убираем границу для браузера Firefox */
+        color: #e1e1e1; /* Цвет линии для остальных браузеров */
+        background-color: #e1e1e1; /* Цвет линии для браузера Firefox и Opera */
+        height: 1px;
+      }
 
-        img {
-            border: 0;
-            display: block;
-        }
+      .padding-wrapper {
+        padding: 0 30px;
+      }
 
-        hr {
-            border: none; /* Убираем границу для браузера Firefox */
-            color: #E1E1E1; /* Цвет линии для остальных браузеров */
-            background-color: #E1E1E1; /* Цвет линии для браузера Firefox и Opera */
-            height: 1px;
-        }
+      .padding-wrapper--top {
+        padding-top: 24px;
+      }
 
-        .padding-wrapper {
-            padding: 0 30px;
-        }
+      .padding-wrapper--bottom {
+        padding-bottom: 24px;
+      }
 
-        .padding-wrapper--top {
-            padding-top: 24px;
-        }
+      .email-title {
+        font-family: "Roboto", "Arial", sans-serif;
+        color: #000000;
+        margin: 0;
+        text-align: left;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+      }
 
-        .padding-wrapper--bottom {
-            padding-bottom: 24px;
-        }
+      .email-link {
+        color: #58606b !important;
+        -webkit-text-size-adjust: none;
+      }
 
-        .email-title {
-            font-family: 'Roboto', 'Arial', sans-serif;
-            color: #000000;
-            margin: 0;
-            text-align: left;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 28px;
-            display: flex;
-            align-items: center;
-        }
-
-        .email-link {
-            color: #58606B !important;
-            -webkit-text-size-adjust: none;
-        }
-
-        .email-text {
-            font-family: 'Roboto', 'Arial', sans-serif;
-            font-weight: 400;
-            color: #000000;
-            font-style: normal;
-            font-size: 16px;
-            line-height: 26px;
-            -webkit-text-size-adjust: none;
-        }
-
+      .email-text {
+        font-family: "Roboto", "Arial", sans-serif;
+        font-weight: 400;
+        color: #000000;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 26px;
+        -webkit-text-size-adjust: none;
+      }
     </style>
-</head>
-<body>
-<table border="0" cellpadding="0" cellspacing="0"
-       style="width: 100%; padding-bottom: 40px;">
-    <tbody>
-    <tr>
-        <td align="center">
-
-<!--            Цвета для хеддера, нужно заменить в div(ниже)-->
-<!--            background: #212842;-->
-<!--            background: #3C13C9;-->
-<!--            background: #6524BA;-->
-<!--            background: #1F1E24;-->
-            <div style="padding: 61px 10px 0; background-color: #00C8FF; margin: 0 auto">
-                <!--///////////-->
-                <table class="email" border="0" cellpadding="0" cellspacing="0" align="center"
-                       style="max-width: 600px;  width: 100%;  background: #FFFFFF;  box-shadow: 0 -12px 15px rgba(0, 122, 255, 0.12); border-radius: 8px 8px 0 0;">
-                    <tbody>
-                    <tr>
-                        <td class="padding-wrapper" style="padding-top: 36px; padding-bottom: 10px">
-                            <h3 class="email-title">Заявка успешно создана</h3>
-                        </td>
-                    </tr>
-
-
-                    </tbody>
-                </table>
-                <!--///////////-->
+  </head>
+  <body>
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      style="width: 100%; padding-bottom: 40px;"
+    >
+      <tbody>
+        <tr>
+          <td align="center">
+            <!--            Цвета для хеддера, нужно заменить в div(ниже)-->
+            <!--            background: #212842;-->
+            <!--            background: #3C13C9;-->
+            <!--            background: #6524BA;-->
+            <!--            background: #1F1E24;-->
+            <div
+              style="padding: 61px 10px 0; background-color: #00C8FF; margin: 0 auto"
+            >
+              <!--///////////-->
+              <table
+                class="email"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                align="center"
+                style="max-width: 600px;  width: 100%;  background: #FFFFFF;  box-shadow: 0 -12px 15px rgba(0, 122, 255, 0.12); border-radius: 8px 8px 0 0;"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      class="padding-wrapper"
+                      style="padding-top: 36px; padding-bottom: 10px"
+                    >
+                      <h3 class="email-title">Заявка успешно создана</h3>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--///////////-->
             </div>
-            <div style="padding: 0 10px 10px; background-color: #ffffff; margin: 0 auto">
-                <!--///////////-->
-                <table class="email" border="0" cellpadding="0" cellspacing="0" align="center"
-                       style="max-width: 600px;  width: 100%;  background: #FFFFFF;  box-shadow: 0 12px 15px rgba(0, 122, 255, 0.12); border-radius: 0 0 8px 8px;">
-                    <tbody>
-                    <tr>
-                        <td class="padding-wrapper" style="padding-top: 16px; padding-bottom: 38px">
+            <div
+              style="padding: 0 10px 10px; background-color: #F7FAFC; height: 100vh; margin: 0 auto"
+            >
+              <!--///////////-->
+              <table
+                class="email"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                align="center"
+                style="max-width: 600px;  width: 100%;  background: #FFFFFF;  box-shadow: 0 12px 15px rgba(0, 122, 255, 0.12); border-radius: 0 0 8px 8px;"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      class="padding-wrapper"
+                      style="padding-top: 16px; padding-bottom: 38px"
+                    >
+                      <span class="email-text"
+                        >Ваша заявка #87675867 успешно создана.</span
+                      >
+                      <br />
+                      <span class="email-text"
+                        >Обращаем Ваше внимание, что заявка оформлена без
+                        авторизации.</span
+                      >
+                      <br />
+                      <span class="email-text">Спасибо, что Вы с нами!</span>
+                    </td>
+                  </tr>
 
-                            <span class="email-text">Ваша заявка #87675867 успешно создана.</span>
-                            <br>
-                            <span class="email-text">Обращаем Ваше внимание, что заявка оформлена без авторизации.</span>
-                            <br>
-                            <span class="email-text">Спасибо, что Вы с нами!</span>
-                        </td>
-                    </tr>
+                  <tr>
+                    <td class="padding-wrapper">
+                      <div
+                        style="height: 4px; background: #D93F6A;background: linear-gradient(90deg, #D93F6A 0%, #FB6A93 100%);"
+                      ></div>
+                    </td>
+                  </tr>
 
-
-                    <tr>
-                        <td class="padding-wrapper">
-                            <div style="height: 4px; background: #D93F6A;"></div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="padding-wrapper padding-wrapper--top">
-                            <!--///////////-->
-                            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
-                                <tbody>
-                                <tr>
-                                    <td style="padding-bottom: 40px;">
-                                        <div>
-                                            <span class="email-text" style="color: #58606B!important;">BestCoin,</span>
-                                            <a href="https://bestcoin.cc/ru/" target="_blank"
-                                               class="email-text email-link">https://bestcoin.cc/ru/</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <!--///////////-->
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <!--///////////-->
+                  <tr>
+                    <td class="padding-wrapper padding-wrapper--top">
+                      <!--///////////-->
+                      <table
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        style="width: 100%;"
+                      >
+                        <tbody>
+                          <tr>
+                            <td style="padding-bottom: 40px;">
+                              <div>
+                                <span
+                                  class="email-text"
+                                  style="color: #58606B!important;"
+                                  >BestCoin,</span
+                                >
+                                <a
+                                  href="https://bestcoin.cc/ru/"
+                                  target="_blank"
+                                  class="email-text email-link"
+                                  >https://bestcoin.cc/ru/</a
+                                >
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--///////////-->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!--///////////-->
             </div>
-        </td>
-    </tr>
-    </tbody>
-</table>
-</body>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>

@@ -1,139 +1,219 @@
 <!--<!DOCTYPE html>-->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Piastrix Email Layout2</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        table {
-            margin: 0;
-            padding: 0;
-            border-collapse: collapse;
-        }
+      table {
+        margin: 0;
+        padding: 0;
+        border-collapse: collapse;
+      }
 
+      span {
+        -webkit-text-size-adjust: none;
+      }
 
-        span {
-            -webkit-text-size-adjust: none;
+      img {
+        border: 0;
+        display: block;
+      }
 
-        }
+      hr {
+        border: none;
+        color: #e1e1e1;
+        background-color: #e1e1e1;
+        height: 1px;
+      }
 
-        img {
-            border: 0;
-            display: block;
-        }
+      .padding-wrapper {
+        padding: 0 30px;
+      }
 
-        hr {
-            border: none;
-            color: #E1E1E1;
-            background-color: #E1E1E1;
-            height: 1px;
-        }
+      .padding-wrapper--top {
+        padding-top: 24px;
+      }
 
-        .padding-wrapper {
-            padding: 0 30px;
-        }
+      .padding-wrapper--bottom {
+        padding-bottom: 24px;
+      }
 
-        .padding-wrapper--top {
-            padding-top: 24px;
-        }
+      .email-title {
+        font-family: "Roboto", "Arial", sans-serif;
+        color: #000000;
+        margin: 0;
+        text-align: left;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+      }
 
-        .padding-wrapper--bottom {
-            padding-bottom: 24px;
-        }
+      .email-link {
+        color: #58606b !important;
+        -webkit-text-size-adjust: none;
+      }
 
-        .email-title {
-            font-family: 'Roboto', 'Arial', sans-serif;
-            color: #000000;
-            margin: 0;
-            text-align: left;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 28px;
-            display: flex;
-            align-items: center;
-        }
-
-        .email-link {
-            color: #58606B !important;
-            -webkit-text-size-adjust: none;
-        }
-
-        .email-text {
-            font-family: 'Roboto', 'Arial', sans-serif;
-            font-weight: 400;
-            color: #000000;
-            font-style: normal;
-            font-size: 16px;
-            line-height: 26px;
-            -webkit-text-size-adjust: none;
-        }
-
+      .email-text {
+        font-family: "Roboto", "Arial", sans-serif;
+        font-weight: 400;
+        color: #000000;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 26px;
+        -webkit-text-size-adjust: none;
+      }
     </style>
-</head>
-<body>
-<table border="0" cellpadding="0" cellspacing="0" style="width:100%;padding-bottom:40px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-right:0;padding-left:0;border-collapse:collapse;" >
-    <tbody>
-    <tr>
-        <td align="center">
-            <div style="padding-top:61px;padding-bottom:0;padding-right:10px;padding-left:10px;background-color:#00C8FF;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;" >
-                <table class="email" border="0" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;width:100%;background-color:#FFFFFF;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;box-shadow:0 -12px 15px rgba(0, 122, 255, 0.12);border-radius:8px 8px 0 0;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-collapse:collapse;" >
-                    <tbody>
-                    <tr>
-                        <td class="padding-wrapper" style="padding-top:36px;padding-bottom:10px;padding-right:30px;padding-left:30px;" >
-                            <h3 class="email-title" style="font-family:'Roboto', 'Arial', sans-serif;color:#000000;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;text-align:left;font-style:normal;font-weight:500;font-size:24px;line-height:28px;display:flex;align-items:center;" >Заявка успешно создана</h3>
-                        </td>
-                    </tr>
-
-
-                    </tbody>
-                </table>
+  </head>
+  <body>
+    <table
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      style="width:100%;padding-bottom:40px;"
+    >
+      <tbody>
+        <tr>
+          <td align="center">
+            <!--            Цвета для хеддера, нужно заменить в div(ниже)-->
+            <!--            background-color: #00C8FF;-->
+            <!--            background-color: #212842;-->
+            <!--            background-color: #3C13C9; background: linear-gradient(90deg, #3C13C9 0%, #9820D9 129.22%); -->
+            <!--            background-color: #6524BA;-->
+            <!--            background-color: #1F1E24;-->
+            <div
+              style="padding-top:61px;padding-bottom:0;padding-right:10px;padding-left:10px;background-color:#00C8FF;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;"
+            >
+              <table
+                class="email"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                align="center"
+                style="max-width:600px;width:100%;background-color:#FFFFFF;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;box-shadow:0 -12px 15px rgba(0, 122, 255, 0.12);border-radius:8px 8px 0 0;"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      class="padding-wrapper"
+                      style="padding-top:36px;padding-bottom:10px;padding-right:30px;padding-left:30px;"
+                    >
+                      <h3
+                        class="email-title"
+                        style="font-family:'Roboto', 'Arial', sans-serif;color:#000000;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;text-align:left;font-style:normal;font-weight:500;font-size:24px;line-height:28px;display:flex;align-items:center;"
+                      >
+                        Заявка успешно создана
+                      </h3>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div style="padding-top:0;padding-bottom:10px;padding-right:10px;padding-left:10px;background-color:#ffffff;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;" >
-                <table class="email" border="0" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;width:100%;background-color:#FFFFFF;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;box-shadow:0 12px 15px rgba(0, 122, 255, 0.12);border-radius:0 0 8px 8px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-collapse:collapse;" >
-                    <tbody>
-                    <tr>
-                        <td class="padding-wrapper" style="padding-top:16px;padding-bottom:38px;padding-right:30px;padding-left:30px;" >
+            <!--              Вставить цвет в div(ниже)-->
+            <!--             background-color: #F7FAFC-->
+            <!--             background-color: #FCFCFC-->
+            <div
+              style="padding-top:0;padding-bottom:10px;padding-right:10px;padding-left:10px;background-color:#F7FAFC;height:100vh;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;"
+            >
+              <table
+                class="email"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                align="center"
+                style="max-width:600px;width:100%;background-color:#FFFFFF;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;box-shadow:0 12px 15px rgba(0, 122, 255, 0.12);border-radius:0 0 8px 8px;"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      class="padding-wrapper"
+                      style="padding-top:16px;padding-bottom:38px;padding-right:30px;padding-left:30px;"
+                    >
+                      <span
+                        class="email-text"
+                        style="font-family:'Roboto', 'Arial', sans-serif;font-weight:400;color:#000000;font-style:normal;font-size:16px;line-height:26px;-webkit-text-size-adjust:none;"
+                        >Ваша заявка #87675867 успешно создана.</span
+                      >
+                      <br />
+                      <span
+                        class="email-text"
+                        style="font-family:'Roboto', 'Arial', sans-serif;font-weight:400;color:#000000;font-style:normal;font-size:16px;line-height:26px;-webkit-text-size-adjust:none;"
+                        >Обращаем Ваше внимание, что заявка оформлена без
+                        авторизации.</span
+                      >
+                      <br />
+                      <span
+                        class="email-text"
+                        style="font-family:'Roboto', 'Arial', sans-serif;font-weight:400;color:#000000;font-style:normal;font-size:16px;line-height:26px;-webkit-text-size-adjust:none;"
+                        >Спасибо, что Вы с нами!</span
+                      >
+                    </td>
+                  </tr>
 
-                            <span class="email-text" style="font-family:'Roboto', 'Arial', sans-serif;font-weight:400;color:#000000;font-style:normal;font-size:16px;line-height:26px;-webkit-text-size-adjust:none;" >Ваша заявка #87675867 успешно создана.</span>
-                            <br>
-                            <span class="email-text" style="font-family:'Roboto', 'Arial', sans-serif;font-weight:400;color:#000000;font-style:normal;font-size:16px;line-height:26px;-webkit-text-size-adjust:none;" >Обращаем Ваше внимание, что заявка оформлена без авторизации.</span>
-                            <br>
-                            <span class="email-text" style="font-family:'Roboto', 'Arial', sans-serif;font-weight:400;color:#000000;font-style:normal;font-size:16px;line-height:26px;-webkit-text-size-adjust:none;" >Спасибо, что Вы с нами!</span>
-                        </td>
-                    </tr>
+                  <tr>
+                    <td
+                      class="padding-wrapper"
+                      style="padding-top:0;padding-bottom:0;padding-right:30px;padding-left:30px;"
+                    >
+                      <!--Вставить цвета для div(ниже)-->
+                      <!--background-color:#D93F6A; background: linear-gradient(90deg, #D93F6A 0%, #FB6A93 100%);-->
+                      <!--background-color:#FB6A4E; background: linear-gradient(90deg, #FB6A4E 0%, #F6A277 100%);-->
+                      <!--background-color:#F94F43; background: linear-gradient(90deg, #F94F43 0%, #EA9A2E 100%);-->
+                      <!--background-color:#F94F43; background: linear-gradient(90deg, #F94F43 0%, #EA9A2E 100%);-->
+                      <!--background-color:#FFD04E;-->
+                      <div
+                        style="height:4px;background-color:#D93F6A;background-image:none;background-repeat:repeat;background: linear-gradient(90deg, #D93F6A 0%, #FB6A93 100%);background-attachment:scroll;"
+                      ></div>
+                    </td>
+                  </tr>
 
-
-                    <tr>
-                        <td class="padding-wrapper" style="padding-top:0;padding-bottom:0;padding-right:30px;padding-left:30px;" >
-                            <div style="height:4px;background-color:#D93F6A;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;" ></div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="padding-wrapper padding-wrapper--top" style="padding-bottom:0;padding-right:30px;padding-left:30px;padding-top:24px;" >
-                            <table border="0" cellpadding="0" cellspacing="0" style="width:100%;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-collapse:collapse;" >
-                                <tbody>
-                                <tr>
-                                    <td style="padding-bottom:40px;" >
-                                        <div>
-                                            <span class="email-text" style="color:#58606B!important;font-family:'Roboto', 'Arial', sans-serif;font-weight:400;font-style:normal;font-size:16px;line-height:26px;-webkit-text-size-adjust:none;" >BestCoin,</span>
-                                            <a href="https://bestcoin.cc/ru/" target="_blank"
-                                               class="email-text email-link" style="font-family:'Roboto', 'Arial', sans-serif;font-weight:400;color:#58606B !important;font-style:normal;font-size:16px;line-height:26px;-webkit-text-size-adjust:none;" >https://bestcoin.cc/ru/</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                  <tr>
+                    <td
+                      class="padding-wrapper padding-wrapper--top"
+                      style="padding-bottom:0;padding-right:30px;padding-left:30px;padding-top:24px;"
+                    >
+                      <table
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        style="width:100%;"
+                      >
+                        <tbody>
+                          <tr>
+                            <td style="padding-bottom:40px;">
+                              <div>
+                                <span
+                                  class="email-text"
+                                  style="color:#58606B!important;font-family:'Roboto', 'Arial', sans-serif;font-weight:400;font-style:normal;font-size:16px;line-height:26px;-webkit-text-size-adjust:none;"
+                                  >BestCoin,</span
+                                >
+                                <a
+                                  href="https://bestcoin.cc/ru/"
+                                  target="_blank"
+                                  class="email-text email-link"
+                                  style="font-family:'Roboto', 'Arial', sans-serif;font-weight:400;color:#58606b !important;font-style:normal;font-size:16px;line-height:26px;-webkit-text-size-adjust:none;"
+                                  >https://bestcoin.cc/ru/</a
+                                >
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-        </td>
-    </tr>
-    </tbody>
-</table>
-</body>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>

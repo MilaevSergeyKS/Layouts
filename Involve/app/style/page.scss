@@ -462,4 +462,14 @@ section {
       }
     }
   }
+  &.advantages {
+    .title {
+      margin-bottom: 20px;
+    }
+    & > p {
+      font: 400 14px / 24px var(--font-manrope);
+      color: var(--secondary-text-color);
+      margin-bottom: 84px;
+    }
+  }
 }
