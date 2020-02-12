@@ -4,8 +4,10 @@ import svg4everybody from "svg4everybody";
 
 import { scrollPage, selectOpenHide } from "./js/main";
 
-scrollPage();
-selectOpenHide()
+document.addEventListener("DOMContentLoaded", () => {
+  scrollPage();
+});
+selectOpenHide();
 objectFitImages();
 svg4everybody();
 
