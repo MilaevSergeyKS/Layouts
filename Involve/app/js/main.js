@@ -1,3 +1,14 @@
+const find = (node, className) => {
+  while (node) {
+    if (node.classList.contains(className)) {
+      return node;
+    } else {
+      node = node.parentElement;
+    }
+  }
+
+  return null;
+};
 const addDeleteEventWheel = (elem, param, func) => {
   if (param === "add") {
     if (elem.addEventListener) {
@@ -43,6 +54,7 @@ export const scrollPage = () => {
   let countSection = sectionBlock.length;
   const sectionHeight = sectionBlock[0].offsetHeight;
   let nowSection = 1;
+  let btns = document.querySelectorAll(".menu-btn");
 
   setTimeout(() => {
     nowSection = Math.ceil(window.pageYOffset / sectionHeight);
@@ -93,6 +105,9 @@ export const scrollPage = () => {
       navBarItems.forEach((item, i) => {
         item.classList.remove("active");
       });
+      btns.forEach((item, i) => {
+        item.classList.remove("active");
+      });
       pageScroll.style.transform = `translateY(-${sectionHeight *
         nowSection++}px)`;
 
@@ -109,6 +124,9 @@ export const scrollPage = () => {
       navBarItems.forEach((item, i) => {
         item.classList.remove("active");
       });
+      btns.forEach((item, i) => {
+        item.classList.remove("active");
+      });
 
       pageScroll.style.transform = `translateY(-${sectionHeight *
         --nowSection}px)`;
@@ -120,12 +138,85 @@ export const scrollPage = () => {
   };
 
   addDeleteEventWheel(elem, "add", onWheel);
+
+  btns.forEach((item, i) => {
+    item.addEventListener("click", e => {
+      btns.forEach(item => {
+        item.classList.remove("active");
+      });
+      document.querySelector("header").classList.remove("menu-open");
+      document.querySelector(".pop-up").classList.remove("open");
+
+      e.currentTarget.classList.add("active");
+
+      pageScroll.style.transform = `translateY(-${sectionHeight *
+        +e.currentTarget.dataset.key -
+        sectionHeight}px)`;
+      nowSection = +e.currentTarget.dataset.key;
+    });
+  });
+
+  let btnMenu = document.querySelector("svg.show-menu-btn");
+  let btnMenuClose = document.querySelector("svg.close-menu-btn");
+
+  btnMenu.addEventListener("click", e => {
+    document.querySelector(".js-features").classList.remove("show");
+    e.currentTarget.parentNode.classList.add("menu-open");
+    document.querySelector(".pop-up").classList.add("open");
+    btns.forEach((item, i) => {
+      item.classList.remove("active");
+    });
+  });
+
+  btnMenuClose.addEventListener("click", e => {
+    e.currentTarget.parentNode.classList.remove("menu-open");
+    document.querySelector(".pop-up").classList.remove("open");
+  });
 };
 
-export const selectOpenHide = () => {
-  document.querySelectorAll("form .value").forEach((item, i) => {
+
+export const menuBtns = () => {
+  let btnService = document.querySelector(".menu-btn-service");
+  let blockService = document.querySelector(".menu-services");
+
+  btnService.addEventListener("click", e => {
+    e.currentTarget.classList.toggle("active");
+    blockService.classList.toggle("open");
+  });
+};
+
+export const accordionShowHide = context => {
+  const title = context.querySelectorAll(".js-accordion-title");
+  const sections = context.querySelectorAll(".js-accordion-description");
+
+  title.forEach((item, i) => {
     item.addEventListener("click", e => {
-      e.currentTarget.parentNode.classList.toggle("open");
+      title.forEach(item => {
+        item.classList.remove("active");
+      });
+      sections.forEach(item => {
+        item.classList.remove("show");
+      });
+      e.currentTarget.classList.add("active");
+
+      find(e.currentTarget, "js-accordion")
+        .querySelector(
+          `.js-accordion-description[data-index="${e.currentTarget.dataset.key}"]`
+        )
+        .classList.add("show");
+    });
+  });
+};
+
+document.querySelectorAll(".js-accordion").forEach(accordionShowHide);
+
+export const usOfferShowHide = () => {
+  let btn = document.querySelectorAll(".js-team-us-offer");
+  let sectionFeatures = document.querySelector(".js-features");
+
+  btn.forEach(item => {
+    item.addEventListener("click", e => {
+      sectionFeatures.classList.toggle("show");
     });
   });
 };

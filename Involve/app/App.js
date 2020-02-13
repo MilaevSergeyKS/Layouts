@@ -2,14 +2,33 @@ import "./App.scss";
 import objectFitImages from "object-fit-images";
 import svg4everybody from "svg4everybody";
 
-import { scrollPage, selectOpenHide } from "./js/main";
+import {
+  scrollPage,
+  usOfferShowHide,
+  menuBtns,
+  accordionShowHide
+} from "./js/main";
 
 document.addEventListener("DOMContentLoaded", () => {
   scrollPage();
 });
-selectOpenHide();
+usOfferShowHide();
+menuBtns();
 objectFitImages();
 svg4everybody();
+
+///////////
+///////////
+///////////
+//Delete after enter href in social links
+document.querySelectorAll(".social-link a").forEach(item => {
+  item.addEventListener("click", e => {
+    e.preventDefault();
+  });
+});
+///////////
+///////////
+///////////
 
 // load assets
 function importAll(r) {

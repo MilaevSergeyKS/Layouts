@@ -15,60 +15,80 @@
   </div>
 
   <div class="block">
-    <div class="column">
-      <div class="img">
-        <svg>
-          <use xlink:href="./images/icons-sprite.svg#link-arrow"></use>
-        </svg>
+    <div class="accordion js-accordion">
+      <div>
+        <div class="img js-accordion-arrow">
+          <svg>
+            <use xlink:href="./images/icons-sprite.svg#link-arrow"></use>
+          </svg>
+        </div>
+
+        <div class="img js-accordion-arrow">
+          <svg>
+            <use xlink:href="./images/icons-sprite.svg#link-arrow"></use>
+          </svg>
+        </div>
+
+        <div class="item js-accordion-title active" data-key="1">
+          Python Developer
+        </div>
+
+        <div class="item js-accordion-title" data-key="2">
+          Linux system administrator | DevOps
+        </div>
       </div>
 
-      <div class="img">
-        <svg>
-          <use xlink:href="./images/icons-sprite.svg#link-arrow"></use>
-        </svg>
+      <div class="desktop">
+        <div class="js-accordion-description show" data-index="1">
+          <h3>Требования</h3>
+
+          <ul>
+            <li>минимум год коммерческого опыта разработки на Python;</li>
+            <li>
+              работа c Flask;
+            </li>
+            <li>опыт web-разработки;</li>
+            <li>опыт работы с системами контроля версий (git);</li>
+          </ul>
+        </div>
+
+        <div class="js-accordion-description" data-index="2">
+          <h3>Требования</h3>
+
+          <ul>
+            <li>Ответственный и осознанный подход к решению задач;</li>
+            <li>
+              Опыт работы не менее 2-х лет на позиции sys.admin или devops;
+            </li>
+            <li>Администрирование linux-серверов (Ubuntu/Debian);</li>
+            <li>Знакомство с Ansible/Terraform;</li>
+            <li>
+              Администрирование web-сервисов (nginx, uwsgi, unicorn, openresty);
+            </li>
+            <li>
+              Администрирование систем мониторинга (Zabbix, Prometheus,
+              Grafana);
+            </li>
+          </ul>
+
+          <h3>Будет плюсом</h3>
+
+          <ul>
+            <li>Опыт администрирования СУБД (Postgresql, Mongodb);</li>
+            <li>Работа с почтовыми сервисами (gmail, postfix);</li>
+            <li>
+              Опыт работы с Hypervisor (Proxmox, VMware) и облачными сервисами
+              (AWS, GCP).
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div class="item active">
-        Python Developer
-      </div>
-
-      <div class="item">
-        Linux system administrator | DevOps
-      </div>
-    </div>
-
-    <div class="column">
-      <h3>Требования</h3>
-
-      <ul>
-        <li>Ответственный и осознанный подход к решению задач;</li>
-        <li>Опыт работы не менее 2-х лет на позиции sys.admin или devops;</li>
-        <li>Администрирование linux-серверов (Ubuntu/Debian);</li>
-        <li>Знакомство с Ansible/Terraform;</li>
-        <li>
-          Администрирование web-сервисов (nginx, uwsgi, unicorn, openresty);
-        </li>
-        <li>
-          Администрирование систем мониторинга (Zabbix, Prometheus, Grafana);
-        </li>
-      </ul>
-
-      <h3>Будет плюсом</h3>
-
-      <ul>
-        <li>Опыт администрирования СУБД (Postgresql, Mongodb);</li>
-        <li>Работа с почтовыми сервисами (gmail, postfix);</li>
-        <li>
-          Опыт работы с Hypervisor (Proxmox, VMware) и облачными сервисами (AWS,
-          GCP).
-        </li>
-      </ul>
     </div>
   </div>
 
   <div class="description">
     <div>
-      <div class="btn">Что мы предлагаем</div>
+      <div class="btn js-team-us-offer">Что мы предлагаем</div>
       <div class="btn blue">Откликнуться на вакансию</div>
     </div>
   </div>

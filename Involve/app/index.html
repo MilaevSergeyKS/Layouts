@@ -10,24 +10,24 @@
   </head>
   <body>
     <main>
-      <header class="menu-open">
+      <header>
         <svg>
           <use xlink:href="./images/icons-sprite.svg#logo"></use>
         </svg>
 
-        <svg>
+        <svg class="show-menu-btn">
           <use xlink:href="./images/icons-sprite.svg#menu"></use>
         </svg>
 
-        <svg>
+        <svg class="close-menu-btn">
           <use xlink:href="./images/icons-sprite.svg#close"></use>
         </svg>
       </header>
 
       <nav></nav>
 
-      <!--      ${require('./partials/pop-up-menu.html')}-->
-      <!--      ${require('./partials/pop-up-features.html')}-->
+      ${require('./partials/pop-up-menu.html')}
+      ${require('./partials/pop-up-features.html')}
       <div class="page-scroll">
         ${require('./partials/main.html')}
         ${require('./partials/service-box.html')}
@@ -36,11 +36,82 @@
         ${require('./partials/contacts.html')}
       </div>
       <div class="contact-us">
-        <svg>
-          <use xlink:href="./images/icons-sprite.svg#contact-us"></use>
-        </svg>
+        <div>
+          <form action="">
+            <h3>Написать нам</h3>
 
-        <span>Связаться с нами</span>
+            <label>
+              <div class="select">
+                <div class="value">
+                  По вопросам сотрудничества
+
+                  <svg>
+                    <use
+                      xlink:href="./images/icons-sprite.svg#arrow-select"
+                    ></use>
+                  </svg>
+                </div>
+
+                <div class="dropdown">
+                  <div class="option active">По вопросам сотрудничества</div>
+                  <div class="option">По вопросам продуктов</div>
+                  <div class="option">По вопросам трудоустройства</div>
+                  <div class="option">По другим вопросам</div>
+                </div>
+              </div>
+
+              <input hidden type="text" />
+              <span>Тема</span>
+            </label>
+
+            <label>
+              <input disabled placeholder="Иван" type="text" />
+
+              <span>Имя</span>
+            </label>
+
+            <label>
+              <input disabled placeholder="test@gmail.com" type="text" />
+
+              <span>Email</span>
+            </label>
+
+            <label>
+              <input
+                disabled
+                placeholder="+* (***) *** - ** - **"
+                type="text"
+              />
+
+              <span>Телефон</span>
+            </label>
+
+            <label>
+              <textarea
+                disabled
+                placeholder="Ваше сообщение..."
+                name=""
+                cols="30"
+              ></textarea>
+
+              <span>Сообщение</span>
+            </label>
+
+            <button disabled class="btn blue">Отправить</button>
+          </form>
+        </div>
+
+        <div>
+          <svg>
+            <use xlink:href="./images/icons-sprite.svg#close"></use>
+          </svg>
+
+          <svg>
+            <use xlink:href="./images/icons-sprite.svg#contact-us"></use>
+          </svg>
+
+          <span>Связаться с нами</span>
+        </div>
       </div>
     </main>
   </body>
