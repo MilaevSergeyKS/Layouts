@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
     <title>QWallety</title>
-    <meta name="description" content="">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-</head>
-<body>
-<div class="page">
-    ${require('./partials/header.html')}
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="page">
+      ${require('./partials/header-ru.html')}
+      <!--            ${require('./partials/header-en.html')}-->
+      <!--      ${require('./partials/section-main.html')}-->
+      <!--      ${require('./partials/content-blocks.html')}-->
 
-        ${require('./partials/section-main.html')}
-<!--        ${require('./partials/content-blocks.html')}-->
+      <!--        ${require('./partials/404.html')}-->
+      <!--        ${require('./partials/404-en.html')}-->
 
-<!--        ${require('./partials/404.html')}-->
-<!--        ${require('./partials/404-en.html')}-->
+      ${require('./partials/aml.html')}
+      <!--      ${require('./partials/aml-en.html')}-->
 
-<!--    ${require('./partials/aml.html')}-->
-<!--    ${require('./partials/aml-en.html')}-->
+      <!--    ${require('./partials/security.html')}-->
+      <!--    ${require('./partials/security-en.html')}-->
 
-<!--    ${require('./partials/security.html')}-->
-<!--    ${require('./partials/security-en.html')}-->
+      <!--    ${require('./partials/agreement.html')}-->
+      <!--    ${require('./partials/agreement-en.html')}-->
 
-<!--    ${require('./partials/agreement.html')}-->
-<!--    ${require('./partials/agreement-en.html')}-->
+      <!--      ${require('./partials/contact.html')} -->
+      ${require('./partials/footer-ru.html')}
+      <!--            ${require('./partials/footer-en.html')}-->
+    </div>
+    <!--    <script>-->
+    <!--      function initMap() {-->
+    <!--        let location = { lat: 50.829375, lng: -0.139863 };-->
+    <!--        let center = { lat: 50.833, lng: -0.139863 };-->
 
-<!--    ${require('./partials/contact.html')}-->
-
-    ${require('./partials/footer.html')}
-</div>
-<script>
-    function initMap() {
-        let location = {lat: 54.688450, lng: 25.272217};
-        let center = {lat: 54.688450, lng: 25.272217};
-
-
-        let mapOptions = {
-            center: new google.maps.LatLng(center),
-            zoom: 15
-        };
-        let map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLMbUksmvlqtvIYBAOQ_F4k7N_hh2IdHk&amp;callback=initMap"></script>
-</body>
+    <!--        let mapOptions = {-->
+    <!--          center: new google.maps.LatLng(center),-->
+    <!--          zoom: 15,-->
+    <!--        };-->
+    <!--        let map = new google.maps.Map(-->
+    <!--          document.getElementById('map'),-->
+    <!--          mapOptions-->
+    <!--        );-->
+    <!--        var marker = new google.maps.Marker({-->
+    <!--          position: location,-->
+    <!--          map: map,-->
+    <!--        });-->
+    <!--      }-->
+    <!--    </script>-->
+    <!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLMbUksmvlqtvIYBAOQ_F4k7N_hh2IdHk&amp;callback=initMap"></script>-->
+  </body>
 </html>
