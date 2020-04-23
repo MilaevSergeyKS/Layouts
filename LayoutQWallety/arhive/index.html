@@ -11,8 +11,8 @@
   </head>
   <body>
     <div class="page">
-      <!--      ${require('./partials/header-ru.html')}-->
-      ${require('./partials/header-en.html')}
+      ${require('./partials/header-ru.html')}
+      <!--            ${require('./partials/header-en.html')}-->
       <!--      ${require('./partials/section-main.html')}-->
       <!--      ${require('./partials/content-blocks.html')}-->
 
@@ -28,14 +28,14 @@
       <!--    ${require('./partials/agreement.html')}-->
       <!--    ${require('./partials/agreement-en.html')}-->
 
-      <!--      ${require('./partials/contact-ru.html')}-->
-      ${require('./partials/contact-en.html')}
-      <!--      ${require('./partials/footer-ru.html')}-->
-      ${require('./partials/footer-en.html')}
+      ${require('./partials/contact-ru.html')}
+      <!--      ${require('./partials/contact-en.html')}-->
+      ${require('./partials/footer-ru.html')}
+      <!--            ${require('./partials/footer-en.html')}-->
     </div>
     <script>
       function initMap() {
-        // let location = { lat: 50.829375, lng: -0.139863 };
+        let location = { lat: 50.829375, lng: -0.139863 };
         let center = { lat: 50.833, lng: -0.139863 };
 
         let mapOptions = {
@@ -46,10 +46,10 @@
           document.getElementById('map'),
           mapOptions
         );
-        // var marker = new google.maps.Marker({
-        //   position: location,
-        //   map: map,
-        // });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+        });
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLMbUksmvlqtvIYBAOQ_F4k7N_hh2IdHk&amp;callback=initMap"></script>
